@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+
+/* 
+
+Aqui vem os estilos padrão comentados na reunião,como os padrões de texto, card e etc.
+
+EXEMPLO:
+*/
+
+.large-title {
+  font-size: 32px;
+  color: rgb(90, 148, 255);
+  font-weight: bold;
+}
