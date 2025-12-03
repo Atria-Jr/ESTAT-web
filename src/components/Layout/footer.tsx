@@ -90,7 +90,7 @@ function Footer() {
               <h2 className="font-semibold text-lg mb-2">Redes Sociais</h2>
               <div className="flex items-center gap-4 mt-2 text-lg">
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/estatjunior/"
                   target="_blank"
                   rel="noreferrer"
                   className="w-9 h-9 rounded-full border border-white flex items-center justify-center hover:text-[#ccd9df] hover:border-[#ccd9df] transition-colors"
@@ -98,7 +98,7 @@ function Footer() {
                   <FaInstagram />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/company/estat-junior/"
                   target="_blank"
                   rel="noreferrer"
                   className="w-9 h-9 rounded-full border border-white flex items-center justify-center hover:text-[#ccd9df] hover:border-[#ccd9df] transition-colors"
@@ -106,7 +106,7 @@ function Footer() {
                   <FaLinkedinIn />
                 </a>
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/estatjunior"
                   target="_blank"
                   rel="noreferrer"
                   className="w-9 h-9 rounded-full border border-white flex items-center justify-center hover:text-[#ccd9df] hover:border-[#ccd9df] transition-colors"
