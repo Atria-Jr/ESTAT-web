@@ -166,19 +166,19 @@ function Contato() {
       <div className="flex md:hidden items-center justify-center gap-4 pb-10">
         <a
           href="https://www.instagram.com/estatjunior/"
-          className="w-9 h-9  bg-[#235F77] flex items-center justify-center"
+          className="w-9 h-9 bg-[#235F77] flex items-center justify-center"
         >
           <FaInstagram className="text-white text-lg" />
         </a>
         <a
           href="https://www.linkedin.com/company/estat-junior/"
-          className="w-9 h-9  bg-[#235F77] flex items-center justify-center"
+          className="w-9 h-9 bg-[#235F77] flex items-center justify-center"
         >
           <FaLinkedinIn className="text-white text-lg" />
         </a>
         <a
           href="https://www.facebook.com/estatjunior"
-          className="w-9 h-9  bg-[#235F77] flex items-center justify-center"
+          className="w-9 h-9 bg-[#235F77] flex items-center justify-center"
         >
           <FaFacebookF className="text-white text-lg" />
         </a>
