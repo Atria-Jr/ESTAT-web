@@ -64,8 +64,12 @@ function Footer() {
             <div>
               <h2 className="font-semibold text-lg mb-2">Contato</h2>
               <ul className="space-y-1">
-                <li>+55 (19) 3521-6073</li>
-                <li>comercial@estatjr.com.br</li>
+                <li>
+                  <a href="tel:+551935216073" className="hover:underline">+55 (19) 3521-6073</a>
+                </li>
+                <li>
+                  <a href="mailto:comercial@estatjr.com.br" className="hover:underline">comercial@estatjr.com.br</a>
+                </li>
                 <li>Formulário de Contato</li>
               </ul>
             </div>
