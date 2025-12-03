@@ -37,7 +37,7 @@ function Navbar() {
     return (
         <div className='justify-between flex h-20 lg:h-24 shadow-xl'>
             <div className='mt-auto mb-auto'>
-                <img src={Logo} className='w-28 lg:w-32 m-4'></img>
+                <img src={Logo} className='w-28 lg:w-32 m-4' alt="Company logo"></img>
             </div>
 
             {/* MENU DESKTOP */}
