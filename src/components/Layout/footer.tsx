@@ -10,12 +10,32 @@ import Logo_alterna from "./../../assets/logo altenativa footer.png";
 function Footer() {
   return (
     <footer className="mt-10">
-      <div className="flex flex-wrap items-center justify-center gap-4 bg-[#ccd9df] px-4 py-4">
-        <img src={Bj} className="h-8 sm:h-10 md:h-12 object-contain" alt="Brasil Júnior" />
-        <img src={Fejesp} className="h-8 sm:h-10 md:h-12 object-contain" alt="FEJESP" />
-        <img src={NUCA} className="h-8 sm:h-10 md:h-12 object-contain" alt="Núcleo Campinas" />
-        <img src={Unicamp} className="h-8 sm:h-10 md:h-12 object-contain" alt="Unicamp" />
-        <img src={Logo} className="h-8 sm:h-10 md:h-12 object-contain" alt="Atria Jr" />
+      <div className="flex flex-wrap items-center justify-center gap-10 lg:gap-40 bg-[#ccd9df] px-4 py-4">
+        <img
+          src={Bj}
+          className="h-8 sm:h-10 md:h-12 object-contain"
+          alt="Brasil Júnior"
+        />
+        <img
+          src={Fejesp}
+          className="h-8 sm:h-10 md:h-12 object-contain"
+          alt="FEJESP"
+        />
+        <img
+          src={NUCA}
+          className="h-8 sm:h-10 md:h-12 object-contain"
+          alt="Núcleo Campinas"
+        />
+        <img
+          src={Unicamp}
+          className="h-8 sm:h-10 md:h-12 object-contain"
+          alt="Unicamp"
+        />
+        <img
+          src={Logo}
+          className="h-8 sm:h-10 md:h-12 object-contain"
+          alt="Atria Jr"
+        />
       </div>
 
       <div className="bg-[#235F77] text-white">
@@ -23,7 +43,7 @@ function Footer() {
           <div className="flex justify-start md:mr-8">
             <img
               src={Logo_alterna}
-              className="bg-white h-32 md:h-40 lg:h-48 object-contain"
+              className="bg-white h-32 md:h-48 lg:h-60 object-contain"
               alt="Logo Atria Jr"
             />
           </div>
@@ -106,7 +126,8 @@ function Footer() {
 
         <div className="border-t border-white/20">
           <p className="text-[11px] text-center text-white/80 py-3 px-2">
-            © {new Date().getFullYear()}. Todos os direitos reservados. Desenvolvido por Atria Júnior e Beets Júnior.
+            © {new Date().getFullYear()}. Todos os direitos reservados.
+            Desenvolvido por Atria Júnior e Beets Júnior.
           </p>
         </div>
       </div>

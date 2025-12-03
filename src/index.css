@@ -1,13 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
+/* Fonte padrão do site inteiro */
+body {
+  margin: 0;
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
 
 /* 
-
-Aqui vem os estilos padrão comentados na reunião,como os padrões de texto, card e etc.
+Aqui vem os estilos padrão comentados na reunião,
+como os padrões de texto, card e etc.
 
 EXEMPLO:
 */
-
 .large-title {
   font-size: 32px;
   color: rgb(90, 148, 255);
