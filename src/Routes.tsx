@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "./pages/home";
 import Contato from "./pages/contato";
 import Layout from "./Layout";
+import QuemSomos from "./pages/quem-somos";
 
 
 // Este arquivo aponta cada URL para um componente de página diferente.
@@ -22,6 +23,10 @@ const Routes = createBrowserRouter([
     {
         path: "/contatos", 
         element: <Contato /> 
+    },
+    {
+      path: "/quem-somos",
+      element: <QuemSomos />
     }
     ]
   }
