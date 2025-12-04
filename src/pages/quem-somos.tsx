@@ -1,6 +1,7 @@
 import fotoTime from '../assets/Quem Somos/foto-time.png';
 import fotoUnicamp from '../assets/Quem Somos/bg-unicamp.png';
-import bgMissao from '../assets/Quem Somos/bg-target.png';
+import bgMissao from '../assets/Quem Somos/bg-missao.png';
+import bgVisao from '../assets/Quem Somos/bg-visao.png';
 
 function QuemSomos() {
     return (
@@ -49,6 +50,11 @@ function QuemSomos() {
             <section className='w-[100%] pt-[40%] pb-[15%] px-5 text-center text-white bg-cover bg-black/90' style={{ backgroundImage: `url(${bgMissao})`}}>
                 <h1 className='text-4xl font-bold'>Nossa Missão</h1>
                 <p>Impactar nossos membros e a sociedade por meio de serviços estatísticos de qualidade e vivência empresarial a fim de uma mesma causa.</p>
+            </section>
+
+            <section className='w-[100%] pt-[40%] pb-[15%] px-5 text-center text-white bg-cover bg-black/90' style={{ backgroundImage: `url(${bgVisao})`}}>
+                <h1 className='text-4xl font-bold'>Nossa Visão</h1>
+                <p>Ser uma empresa Alto Impacto, referência em Estatística e reconhecida pela união e propósito da equipe.</p>
             </section>
 
             <TagStyles/>
