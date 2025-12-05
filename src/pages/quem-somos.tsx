@@ -2,8 +2,26 @@ import fotoTime from '../assets/Quem Somos/foto-time.png';
 import fotoUnicamp from '../assets/Quem Somos/bg-unicamp.png';
 import bgMissao from '../assets/Quem Somos/bg-missao.png';
 import bgVisao from '../assets/Quem Somos/bg-visao.png';
+import Slider from '../components/Slider/slider';
+import { SwiperSlide } from 'swiper/react';
+import { useState } from 'react';
 
 function QuemSomos() {
+    const [slideAtivo, setSlideAtivo] = useState(0);
+    const [swiper, setSwiper] = useState<any | null>(null);
+
+    const settings = {
+        centeredSlides: true,
+        slidesPerView: 2.5,
+        spaceBetween: 10,
+        onSwiper: (s:any) => setSwiper(s),
+        onSlideChange: (swiper:any) => setSlideAtivo(swiper.realIndex)
+    };
+    const imagensCarrossel = Object.values(
+        import.meta.glob('../assets/Quem Somos/*.svg', { eager: true, import: 'default' })
+    ) as string[];
+
+
     return (
         <main>
             <section className="bg-blend-multiply bg-black/85 text-white p-5" style={{ backgroundImage: `url(${fotoUnicamp})`}}>
@@ -51,11 +69,42 @@ function QuemSomos() {
                 <h1 className='text-4xl font-bold'>Nossa Missão</h1>
                 <p>Impactar nossos membros e a sociedade por meio de serviços estatísticos de qualidade e vivência empresarial a fim de uma mesma causa.</p>
             </section>
+            
+            <section className='bg-[#1A485B] py-10'>
+                <h1 className='text-4xl font-bold text-white text-center mb-5'>Nossos Valores</h1>
+                
+                <Slider settings = {settings}>
+                    {imagensCarrossel.map((src, index) => (
+                        <SwiperSlide
+                        key={index}
+                        onClick={() => {
+                            if (!swiper) return;
+                            if (index === swiper.activeIndex - 1) swiper.slidePrev();
+                            if (index === swiper.activeIndex + 1) swiper.slideNext();
+                        }}
+                        className="flex justify-center items-center transition-all duration-500 ease-in-out">
+                            <img src={src} alt={`Imagem ${index}`}/>
+                        </SwiperSlide>
+                    ))}
+                </Slider>
+
+                <div className="flex justify-center gap-2 mt-4">
+                {imagensCarrossel.map((_, index) => (
+                    <div
+                    key={index}
+                    onClick={() => swiper?.slideTo(index)}
+                    className={"h-3 rounded-full transition-all duration-300 " + (index === slideAtivo ? "w-6 bg-white" : "w-3 bg-white/50")}></div>
+                ))}
+                </div>
+
+                
+            </section>
 
             <section className='w-[100%] pt-[40%] pb-[15%] px-5 text-center text-white bg-cover bg-black/90' style={{ backgroundImage: `url(${bgVisao})`}}>
                 <h1 className='text-4xl font-bold'>Nossa Visão</h1>
                 <p>Ser uma empresa Alto Impacto, referência em Estatística e reconhecida pela união e propósito da equipe.</p>
             </section>
+
 
             <TagStyles/>
         </main>
@@ -91,6 +140,18 @@ export function TagStyles() {
             
             li strong {
                 font-size: 24px;
+            }
+
+            .swiper-slide {
+                opacity: 0.6;
+                transform: scale(0.85) !important;
+                filter: blur(1.3px);
+            }
+
+            .swiper-slide-active {
+                opacity: 1 !important;
+                transform: scale(1) !important;
+                filter: blur(0px);
             }
         `}</style>
     );
