@@ -19,7 +19,7 @@ function QuemSomos() {
         onSlideChange: (swiper:any) => setSlideAtivo(swiper.realIndex)
     };
     const imagensCarrossel = Object.values(
-        import.meta.glob('../assets/Quem Somos/*.svg', { eager: true, import: 'default' })
+        import.meta.glob('../assets/Quem Somos/carrossel/*.svg', { eager: true, import: 'default' })
     ) as string[];
     const anos = [2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018];
     const nomes: Record<number, string[]> = {
@@ -84,7 +84,7 @@ function QuemSomos() {
                 <p className='lg:text-2xl'>Impactar nossos membros e a sociedade por meio de serviços estatísticos de qualidade e vivência empresarial a fim de uma mesma causa.</p>
             </section>
             
-            <section className='bg-[#1A485B] py-10'>
+            <section className='bg-[#1A485B] py-10 lg:hidden'>
                 <h1 className='text-4xl font-bold text-white text-center mb-5'>Nossos Valores</h1>
                 
                 <Slider settings = {settings}>
@@ -112,6 +112,16 @@ function QuemSomos() {
                 </div>
 
                 
+            </section>
+
+            <section className='hidden bg-[#1A485B] py-10 lg:flex lg:flex-col lg:items-center'>
+                <h1 className='text-4xl lg:text-5xl lg:pb-5 font-bold text-white text-center mb-5'>Nossos Valores</h1>
+
+                <div className='grid grid-cols-3 justify-items-center gap-y-13 lg:w-[1000px]'>
+                    { imagensCarrossel.map((src, index) => (
+                        <img key={index} src={src} alt={`Imagem ${index}`} className="w-[280px]"/>
+                    )) }
+                </div>
             </section>
 
             <section className='w-[100%] pt-[40%] pb-[15%] px-5 text-center text-white bg-cover bg-black/90' style={{ backgroundImage: `url(${bgVisao})`}}>
