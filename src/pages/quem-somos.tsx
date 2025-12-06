@@ -9,6 +9,7 @@ import { useState } from 'react';
 function QuemSomos() {
     const [slideAtivo, setSlideAtivo] = useState(0);
     const [swiper, setSwiper] = useState<any | null>(null);
+    const [anoSelecionado, setAnoSelecionado] = useState<number | null>(null);
 
     const settings = {
         centeredSlides: true,
@@ -20,6 +21,17 @@ function QuemSomos() {
     const imagensCarrossel = Object.values(
         import.meta.glob('../assets/Quem Somos/*.svg', { eager: true, import: 'default' })
     ) as string[];
+    const anos = [2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018];
+    const nomes: Record<number, string[]> = {
+        2025: ["Akemi Vanessa Higa Hayashi", "Alexandre Araujo Seignemartin", "Ana Carolina Alves Oliveira", "Ana Cristina Yumi Utsumi", "Anderson Gabriel dos Reis Ortelan", "Beatriz Heloise Messias", "Beatriz Miranda Ferreira", "Berenice Antunes de Oliveira Barbosa", "Brenda Alessandra Muro Mathey", "Caroline da Silva Mangile", "Cássia Aparecida Scorsolino", "Dieine Caroline Martins do Nascimento", 'Gabriela Lima', 'Hugo Alves', 'Isabela Pinto'],
+        2024: ["Felipe Arlanche Petri", "Felipe Laurindo dos Santos", "Gabriel Paschoal Stein", "Gabrielly Baratela de Carvalho", "Giovanna Miyuki Yoshida", "Giovanni Souza Samartini", "Gustavo de Almeida Leiva", "Gustavo Sanches Guaragna", "Helton Marinho de Ávila"],
+        2023: ['Gabriela Lima', 'Hugo Alves', 'Isabela Pinto'],
+        2022: ['João Carvalho', 'Karla Dias', 'Lucas Moreira'],
+        2021: ['Mariana Gomes', 'Nicolas Ribeiro', 'Olivia Santos'],
+        2020: ['Paulo Teixeira', 'Quésia Araújo', 'Rafael Nunes'],
+        2019: ['Sofia Martins', 'Thiago Barros', 'Vanessa Farias'],
+        2018: ['Wesley Lima', 'Yasmin Silva', 'Zeca Fernandes']
+    }
 
 
     return (
@@ -37,7 +49,7 @@ function QuemSomos() {
                 </div>
             </section>
 
-            <section className='px-6 py-10'>
+            <section id='historia' className='px-6 py-10'>
                 <h1 className="large-title">Nossa história</h1>
                 <h3 className="font-medium">Alguns marcos da Estat Jr</h3>
 
@@ -105,6 +117,31 @@ function QuemSomos() {
                 <p>Ser uma empresa Alto Impacto, referência em Estatística e reconhecida pela união e propósito da equipe.</p>
             </section>
 
+            <section className='w-full p-5 text-center'>
+                <h1 className='large-title cyan pb-3'>Nosso time</h1>
+
+                <div className='rounded bg-[#1A485B] text-white border border-black'>
+                    <ul className='list-none flex flex-wrap text-xl font-bold'>
+                        {anos.map((ano) => (
+                            <li
+                                key={ano}
+                                onClick={() => setAnoSelecionado(anoSelecionado === ano ? null : ano)}
+                                className={
+                                    "basis-1/4 border border-black cursor-pointer transition-colors " +
+                                    (anoSelecionado === ano ? "bg-white text-[#1A485B]" : "bg-[#1A485B] text-white")
+                                }
+                            >
+                                {ano}
+                            </li>
+                        ))}
+                    </ul>
+                    <ul className='max-h-[320px] overflow-y-auto text-start p-4 font-medium custom-scroll'>
+                        {anoSelecionado && nomes[anoSelecionado].map((nome, index) => (
+                            <li key={index}>{nome}</li>
+                        ))}
+                    </ul>
+                </div>
+            </section>
 
             <TagStyles/>
         </main>
@@ -116,7 +153,7 @@ export default QuemSomos
 export function TagStyles() {
     return (
         <style>{`
-            li::before {
+            #historia li::before {
                 display: inline-block;
                 margin-right: 5px;
                 content: "";
@@ -126,19 +163,19 @@ export function TagStyles() {
                 background-color: #5a94ff;
             }
 
-            li {
+            #historia li {
                 margin-left:-8px;
                 min-height: 80px;
             }
 
-            li p {
+            #historia li p {
                 margin-left: 20px;
                 line-height: 1;
                 font-size: 14px;
                 font-weight: 500;
             }
             
-            li strong {
+            #historia li strong {
                 font-size: 24px;
             }
 
@@ -152,6 +189,20 @@ export function TagStyles() {
                 opacity: 1 !important;
                 transform: scale(1) !important;
                 filter: blur(0px);
+            }
+
+            .cyan {
+                color: #1A485B;
+            }
+
+            .custom-scroll::-webkit-scrollbar {
+                width: 4px;
+            }
+            .custom-scroll::-webkit-scrollbar-thumb {
+                background-color: #ffffffff;
+            }
+            .custom-scroll::-webkit-scrollbar-track {
+                background: #1A485B;
             }
         `}</style>
     );
