@@ -9,7 +9,7 @@ import { useState } from 'react';
 function QuemSomos() {
     const [slideAtivo, setSlideAtivo] = useState(0);
     const [swiper, setSwiper] = useState<any | null>(null);
-    const [anoSelecionado, setAnoSelecionado] = useState<number | null>(null);
+    const [anoSelecionado, setAnoSelecionado] = useState<number | null>(2025);
 
     const settings = {
         centeredSlides: true,
