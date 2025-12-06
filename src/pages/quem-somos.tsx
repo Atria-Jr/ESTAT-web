@@ -1,7 +1,7 @@
 import fotoTime from '../assets/Quem Somos/foto-time.svg';
 import fotoUnicamp from '../assets/Quem Somos/bg-unicamp.png';
 import bgMissao from '../assets/Quem Somos/bg-missao.svg';
-import bgVisao from '../assets/Quem Somos/bg-visao.png';
+import bgVisao from '../assets/Quem Somos/bg-visao.svg';
 import Slider from '../components/Slider/slider';
 import { SwiperSlide } from 'swiper/react';
 import { useState } from 'react';
@@ -124,9 +124,9 @@ function QuemSomos() {
                 </div>
             </section>
 
-            <section className='w-[100%] pt-[40%] pb-[15%] px-5 text-center text-white bg-cover bg-black/90' style={{ backgroundImage: `url(${bgVisao})`}}>
-                <h1 className='text-4xl font-bold'>Nossa Visão</h1>
-                <p>Ser uma empresa Alto Impacto, referência em Estatística e reconhecida pela união e propósito da equipe.</p>
+            <section className='w-[100%] pt-[40%] pb-[15%] px-5 text-center text-white bg-cover bg-black/90 lg:pt-[20%] lg:pb-[5%] bg-center' style={{ backgroundImage: `url(${bgVisao})`}}>
+                <h1 className='text-4xl lg:text-5xl font-bold'>Nossa Visão</h1>
+                <p className='lg:text-2xl'>Ser uma empresa Alto Impacto, referência em Estatística e reconhecida pela união e propósito da equipe.</p>
             </section>
 
             <section className='w-full p-5 text-center'>
