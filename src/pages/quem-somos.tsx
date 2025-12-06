@@ -129,17 +129,17 @@ function QuemSomos() {
                 <p className='lg:text-2xl'>Ser uma empresa Alto Impacto, referência em Estatística e reconhecida pela união e propósito da equipe.</p>
             </section>
 
-            <section className='w-full p-5 text-center'>
-                <h1 className='large-title cyan pb-3'>Nosso time</h1>
+            <section className='w-full p-5 text-center lg:flex lg:flex-col lg:items-center'>
+                <h1 className='large-title lg:!text-6xl lg:my-5 cyan pb-3'>Nosso time</h1>
 
-                <div className='rounded bg-[#1A485B] text-white border border-black'>
+                <div className='rounded bg-[#1A485B] text-white border border-black lg:w-[984px]'>
                     <ul className='list-none flex flex-wrap text-xl font-bold'>
                         {anos.map((ano) => (
                             <li
                                 key={ano}
                                 onClick={() => setAnoSelecionado(anoSelecionado === ano ? null : ano)}
                                 className={
-                                    "basis-1/4 border border-black cursor-pointer transition-colors " +
+                                    "basis-1/4 lg:basis-1/8 border border-black cursor-pointer transition-colors " +
                                     (anoSelecionado === ano ? "bg-white text-[#1A485B]" : "bg-[#1A485B] text-white")
                                 }
                             >
@@ -147,7 +147,7 @@ function QuemSomos() {
                             </li>
                         ))}
                     </ul>
-                    <ul className='max-h-[320px] overflow-y-auto text-start p-4 font-medium custom-scroll'>
+                    <ul className='max-h-[320px] lg:max-h-[1000px] overflow-y-auto text-start p-4 font-medium custom-scroll lg:columns-2'>
                         {anoSelecionado && nomes[anoSelecionado].map((nome, index) => (
                             <li key={index}>{nome}</li>
                         ))}
