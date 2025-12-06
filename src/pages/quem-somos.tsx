@@ -1,4 +1,4 @@
-import fotoTime from '../assets/Quem Somos/foto-time.png';
+import fotoTime from '../assets/Quem Somos/foto-time.svg';
 import fotoUnicamp from '../assets/Quem Somos/bg-unicamp.png';
 import bgMissao from '../assets/Quem Somos/bg-missao.png';
 import bgVisao from '../assets/Quem Somos/bg-visao.png';
@@ -36,16 +36,18 @@ function QuemSomos() {
 
     return (
         <main>
-            <section className="bg-blend-multiply bg-black/85 text-white p-5" style={{ backgroundImage: `url(${fotoUnicamp})`}}>
-                <h1 className="large-title underline">Quem Somos</h1>
-                <p>
-                    Somos a empresa júnior de Estatística da UNICAMP, fundada em 1991. Atuamos há mais de 30 anos transformando dados em resultados por meio de consultoria estatística realizada por graduandos, com orientação de professores e profissionais convidados.
-                    <br/><br/>
-                    Nossa proposta é dupla: gerar impacto real para clientes com soluções baseadas em evidência e formar pessoas por meio de projetos práticos que conectam universidade e mercado. Como parte do Movimento Empresa Júnior (MEJ), operamos sem fins lucrativos e com foco em aprendizado e impacto.
-                    <br/><br/>
-                </p>
+            <section className="bg-black/100 text-white p-5 lg:flex lg:p-[80px]" style={{ backgroundImage: `url(${fotoUnicamp})`}}>
+                <div className='basis-2/3'>
+                    <h1 className="large-title underline lg:no-underline">Quem Somos</h1>
+                    <p>
+                        Somos a empresa júnior de Estatística da UNICAMP, fundada em 1991. Atuamos há mais de 30 anos transformando dados em resultados por meio de consultoria estatística realizada por graduandos, com orientação de professores e profissionais convidados.
+                        <br/><br/>
+                        Nossa proposta é dupla: gerar impacto real para clientes com soluções baseadas em evidência e formar pessoas por meio de projetos práticos que conectam universidade e mercado. Como parte do Movimento Empresa Júnior (MEJ), operamos sem fins lucrativos e com foco em aprendizado e impacto.
+                        <br/><br/>
+                    </p>
+                </div>
                 <div className="flex justify-center">
-                    <img src={fotoTime} alt="Foto do time" />
+                    <img src={fotoTime} alt="Foto do time" className='w-[80%] basis-1/3 object-contain'/>
                 </div>
             </section>
 
