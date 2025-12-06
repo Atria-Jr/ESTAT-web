@@ -51,7 +51,7 @@ function QuemSomos() {
                 </div>
             </section>
 
-            <section id='historia' className='px-6 py-10'>
+            <section id='historia' className='px-6 py-10 lg:px-[80px] lg:py-[50px]'>
                 <h1 className="large-title">Nossa história</h1>
                 <h3 className="font-medium">Alguns marcos da Estat Jr</h3>
 
@@ -178,7 +178,7 @@ export function TagStyles() {
             }
             
             #historia li strong {
-                font-size: 24px;
+                font-size: 28px;
             }
 
             .swiper-slide {
