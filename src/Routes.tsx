@@ -4,6 +4,7 @@ import Home from "./pages/home";
 import Contato from "./pages/contato";
 import Layout from "./Layout";
 import QuemSomos from "./pages/quem-somos";
+import Servicos from "./pages/servicos";
 
 
 // Este arquivo aponta cada URL para um componente de página diferente.
@@ -27,6 +28,10 @@ const Routes = createBrowserRouter([
     {
       path: "/quem-somos",
       element: <QuemSomos />
+    },
+    {
+      path: "/servicos",
+      element: <Servicos />
     }
     ]
   }
