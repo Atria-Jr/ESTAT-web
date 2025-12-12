@@ -30,21 +30,21 @@ function MachineLearning() {
 
                 <div className="max-w-[1024px] mx-auto">
                     <div className="p-3 text-white text-center grid md:grid-cols-2 md:grid-cols-[1fr_350px] lg:grid-cols-[1fr_400px] gap-4 justify-items-center">
-                        <div className="px-3 py-5 max-w-[400px] md:max-w-[580px]" style={{backgroundImage:`url(${redesNeurais})`}}>
+                        <div className="px-3 py-5 max-w-[400px] md:max-w-[650px] bg-cover" style={{backgroundImage:`url(${redesNeurais})`}}>
                             <h3 className="text-lg font-semibold">Redes Neurais e Modelos Avançados</h3>
                             <p>Aplicamos técnicas de IA e deep learning para identificar relações complexas e previsões de alta acurácia.</p>
                         </div>
-                        <div className="px-3 py-5 max-w-[400px] md:max-w-[none]" style={{backgroundImage:`url(${modelosRegressao})`}}>
+                        <div className="px-3 py-5 max-w-[400px] md:max-w-[none] bg-cover" style={{backgroundImage:`url(${modelosRegressao})`}}>
                             <h3 className="text-lg font-semibold">Modelos de Regressão</h3>
                             <p>Prevemos resultados numéricos ou categóricos, entendendo como cada fator influencia seus indicadores.</p>
                         </div>
                     </div>
                     <div className="p-3 text-white text-center grid md:grid-cols-2 md:grid-cols-[350px_1fr] lg:grid-cols-[400px_1fr] gap-4 justify-items-center">
-                        <div className="px-3 py-5 max-w-[400px] md:max-w-[none]" style={{backgroundImage:`url(${analiseCluster})`}}>
+                        <div className="px-3 py-5 max-w-[400px] md:max-w-[none] bg-cover" style={{backgroundImage:`url(${analiseCluster})`}}>
                             <h3 className="text-lg font-semibold">Análise de Cluster</h3>
                             <p>Agrupamos seus dados em perfis e segmentos, revelando padrões ocultos e oportunidades estratégicas.</p>
                         </div>
-                        <div className="px-3 py-5 max-w-[400px] md:max-w-[580px]" style={{backgroundImage:`url(${analiseSeries})`}}>
+                        <div className="px-3 py-5 max-w-[400px] md:max-w-[650px] bg-cover" style={{backgroundImage:`url(${analiseSeries})`}}>
                             <h3 className="text-lg font-semibold">Análise de Séries Temporais</h3>
                             <p>Projetamos o comportamento de dados ao longo do tempo para antecipar tendências e demandas.</p>
                         </div>
