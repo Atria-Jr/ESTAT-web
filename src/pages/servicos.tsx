@@ -1,4 +1,4 @@
-import bgTop from '../assets/Serviços/bg-top.svg';
+import bgTop from '../assets/Serviços/bg-top.png';
 import analise from '../assets/Serviços/analise.svg';
 import business from '../assets/Serviços/business-inteligence.svg';
 import consultoria from '../assets/Serviços/consultoria.svg';
@@ -9,8 +9,8 @@ import seta from '../assets/Serviços/seta.svg';
 
 function Servicos() {
     return <main>
-        <section className='py-5'>
-            <img src={bgTop} alt="gráficos" className='w-full'/>
+        <section className='py-5 mt-3 bg-cover' style={{backgroundImage:`url(${bgTop})`}}>
+            <h1 className='text-xl lg:text-3xl text-white font-bold text-center py-5'>Conheça os Nossos Serviços</h1>
         </section>
 
         <section className='md:px-10'>
