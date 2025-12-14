@@ -5,6 +5,7 @@ import Contato from "./pages/contato";
 import Layout from "./Layout";
 import QuemSomos from "./pages/quem-somos";
 import Servicos from "./pages/servicos";
+import MachineLearning from "./pages/machine-learning";
 
 
 // Este arquivo aponta cada URL para um componente de página diferente.
@@ -20,21 +21,26 @@ const Routes = createBrowserRouter([
       { 
         path: "/", 
         element: <Home /> 
-    },
-    {
-        path: "/contatos", 
-        element: <Contato /> 
-    },
-    {
-      path: "/quem-somos",
-      element: <QuemSomos />
-    },
-    {
-      path: "/servicos",
-      element: <Servicos />
-    }
+      },
+      {
+          path: "/contatos", 
+          element: <Contato /> 
+      },
+      {
+        path: "/quem-somos",
+        element: <QuemSomos />
+      },
+      {
+        path: "/servicos",
+        element: <Servicos />
+      },
+      {
+        path: "/servicos/machine-learning",
+        element: <MachineLearning />
+      }
     ]
-  }
-]);
+    }
+  ]);
+
 
 export default Routes;
