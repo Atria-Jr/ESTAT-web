@@ -68,6 +68,8 @@ function MachineLearning() {
                         <li>Tomar decisões embasadas e estratégicas</li>
                     </ul>
                 </div>
+
+                <a href="https://wa.me/551935216073" target='_blank' className='w-[300px] h-[68px] bg-[#1A485B] text-center text-white font-semibold text-lg px-2 md:px-15 py-5 m-auto block'>CONTATE-NOS</a>
             </section>
 
             <section className="bg-[#1A485B] text-white text-center px-3 py-5">
