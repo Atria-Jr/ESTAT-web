@@ -16,7 +16,7 @@ function Servicos() {
         <section className='md:px-10'>
             <h2 className='text-center my-[50px] text-[#329BD5] font-bold text-lg lg:text-3xl'>Impulsione o sucesso do seu negócio com...</h2>
 
-            <div className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 justify-items-center gap-10 max-w-[1600px] mx-auto'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 justify-items-center items-center gap-10 px-2 max-w-[1600px] mx-auto'>
                 <article className='flex flex-col items-center gap-3 max-w-[400px] md:max-w-[385px] lg:max-w-[470px] aspect-1/1 border border-[#329BD5] border-3 p-5'>
                     <h3 className='text-[#329BD5] text-center font-bold lg:text-2xl'>Análise de Dados</h3>
                     <img src={analise} alt="Análise de Dados" className='px-4'/>
