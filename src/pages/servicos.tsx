@@ -56,7 +56,7 @@ function Servicos() {
                     <h3 className='text-[#329BD5] text-center font-bold lg:text-2xl'>Planejamento de Experimento</h3>
                     <img src={planejamento} alt="Planejamento de Experimento" className='px-4'/>
                     <p className='text-justify text-sm lg:text-base font-medium flex-1'>Não arrisque suas conclusões com dados duvidosos. Nosso serviço de Planejamento de Experimento garante que sua pesquisa ou teste gere resultados precisos e acionáveis, otimizando seus recursos e eliminando os achismos.</p>
-                    <a href="#" className='text-white bg-[#2F83AC] w-fit px-3 py-1 pointer'>Saiba Mais</a>
+                    <a href="servicos/planejamento-estrategico" className='text-white bg-[#2F83AC] w-fit px-3 py-1 pointer'>Saiba Mais</a>
                 </article>
             </div>
         </section>

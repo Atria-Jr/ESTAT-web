@@ -6,6 +6,7 @@ import Layout from "./Layout";
 import QuemSomos from "./pages/quem-somos";
 import Servicos from "./pages/servicos";
 import MachineLearning from "./pages/machine-learning";
+import Planejamento from "./pages/planejamento";
 
 
 // Este arquivo aponta cada URL para um componente de página diferente.
@@ -37,6 +38,10 @@ const Routes = createBrowserRouter([
       {
         path: "/servicos/machine-learning",
         element: <MachineLearning />
+      },
+      {
+        path: "servicos/planejamento-estrategico",
+        element: <Planejamento />
       }
     ]
     }
