@@ -60,6 +60,10 @@ function Planejamento() {
 
                 <p className="text-[#A3F2F7] text-xs md:text-sm xl:text-base text-center px-2 max-w-[500px] mx-auto">Transforme dados em conhecimento concreto. Fale com nossos especialistas e estruture seu próximo projeto com a máxima confiança.</p>
             </section>
+
+            <section className='my-15 xl:my-25 flex justify-center items-end gap-5'>
+                <a href="https://wa.me/551935216073" target='_blank' className='w-[300px] h-[68px] bg-[#1A485B] shadow-lg shadow-black text-center text-white font-semibold text-lg px-2 md:px-15 py-5'>CONTATE-NOS</a>
+            </section>
         </main>
     )
 }
