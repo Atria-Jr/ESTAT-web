@@ -1,6 +1,6 @@
 import bgTop from "../assets/Planejamento/bg-top.png";
 import peopleDesktop from "../assets/Planejamento/people-oval-style.png";
-import peopleMobile from "../assets/Planejamento/people-wave-style.png";
+import peopleMobile from "../assets/Planejamento/people-wave-style.svg";
 
 function Planejamento() {
 
@@ -45,6 +45,20 @@ function Planejamento() {
                         <p className="sm:text-lg">Definimos o público e o tamanho exato da amostra para que seus resultados sejam representativos e possam ser generalizados com segurança.</p>
                     </div>
                 </div>
+            </section>
+
+            <section className="bg-[#1A485B] font-bold text-white py-15 md:pt-0 md:pb-5">
+                <div className="md:grid md:grid-cols-2 max-w-[1500px] mx-auto">
+                    <img src={peopleDesktop} alt="Pessoas assistindo uma palestra" className="hidden md:block"/>
+                    <div className="flex flex-col justify-center max-w-[500px] xl:max-w-[800px] mx-auto">
+                        <h1 className="md:text-lg xl:text-2xl text-center mb-8">O Benefício Direto para Seu Projeto</h1>
+                        <p className="text-xs md:text-sm xl:text-base text-justify px-10 max-w-[550px] xl:max-w-[800px] mx-auto">Com um planejamento robusto, você <span className="text-[#A3F2F7]">minimiza riscos</span>, <span className="text-[#A3F2F7]">economiza recursos</span> e <span className="text-[#A3F2F7]">ganha segurança</span> para tirar conclusões de alto impacto, seja para validar uma hipótese, testar uma intervenção ou analisar um público-alvo.</p>
+                    </div>
+                </div>
+
+                <img src={peopleMobile} alt="Pessoas assistindo uma palestra" className="md:hidden w-full my-5"/>
+
+                <p className="text-[#A3F2F7] text-xs md:text-sm xl:text-base text-center px-2 max-w-[500px] mx-auto">Transforme dados em conhecimento concreto. Fale com nossos especialistas e estruture seu próximo projeto com a máxima confiança.</p>
             </section>
         </main>
     )
