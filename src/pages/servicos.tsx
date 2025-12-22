@@ -21,7 +21,7 @@ function Servicos() {
                     <h3 className='text-[#329BD5] text-center font-bold lg:text-2xl'>Análise de Dados</h3>
                     <img src={analise} alt="Análise de Dados" className='px-4'/>
                     <p className='text-justify text-sm lg:text-base font-medium flex-1'>A análise de dados é um procedimento de averiguação, limpeza, transformação e modelagem de dados com o objetivo de encontrar informações úteis, apresentar conclusões e contribuir na tomada de decisões.</p>
-                    <a href="#" className='text-white bg-[#2F83AC] w-fit px-3 py-1 pointer'>Saiba Mais</a>
+                    <a href="servicos/analise-de-dados" className='text-white bg-[#2F83AC] w-fit px-3 py-1 pointer'>Saiba Mais</a>
                 </article>
 
                 <article className='flex flex-col items-center gap-3 max-w-[400px] md:max-w-[385px] lg:max-w-[480px] aspect-square border-[#329BD5] border-3 p-5'>
