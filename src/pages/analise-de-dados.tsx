@@ -1,5 +1,4 @@
 import bgTop from '../assets/analisededados/d8b7a2fd620ff7be248b14ddbcb9aa05e936bbba.jpg'
-import seta from '../assets/Serviços/seta.svg'
 
 import img1 from '../assets/analisededados/442bec9c38a6a711d39854648c23adcb34aa1964.png'
 import img2 from '../assets/analisededados/528b7877b11173c33c2882c59e581dd76c4f89e9.png'
@@ -8,6 +7,36 @@ import img4 from '../assets/analisededados/711e327a0ef7b868c319c4951fb73365cbc7a
 import img5 from '../assets/analisededados/896aeb08c7810599e7e868e261ee164e7160c47d.png'
 import img6 from '../assets/analisededados/cd8bbc0f80cdad4ac4a2a7d8ea90b883e184fb8f.png'
 import img7 from '../assets/analisededados/ec5e44f6a3b3824fce794ade48bf4dfb5c3f3204.png'
+
+// ✅ Seta SEM FUNDO (SVG transparente)
+function SetaIcon({ className = '' }) {
+	return (
+		<svg
+			className={className}
+			viewBox='0 0 64 64'
+			xmlns='http://www.w3.org/2000/svg'
+			fill='none'
+			aria-hidden='true'
+		>
+			{/* haste */}
+			<path
+				d='M6 32h44'
+				stroke='currentColor'
+				strokeWidth='6'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			{/* ponta */}
+			<path
+				d='M36 16l14 16-14 16'
+				stroke='currentColor'
+				strokeWidth='6'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+		</svg>
+	)
+}
 
 function AnaliseDeDados() {
 	return (
@@ -122,8 +151,10 @@ function AnaliseDeDados() {
 					<p className='mb-6 text-lg'>
 						Dê o próximo passo para entender seus dados. Fale com nossos especialistas e transforme suas informações em insights poderosos.
 					</p>
-					<div className='flex justify-center items-center gap-4'>
-						<img src={seta} className='hidden lg:block w-20' alt='' />
+
+					<div className='flex justify-center items-center gap-4 text-white'>
+						<SetaIcon className='hidden lg:block w-20 h-20' />
+
 						<a
 							href='https://wa.me/551935216073'
 							target='_blank'
@@ -132,7 +163,8 @@ function AnaliseDeDados() {
 						>
 							CONTATE-NOS
 						</a>
-						<img src={seta} className='hidden lg:block w-20 transform scale-x-[-1]' alt='' />
+
+						<SetaIcon className='hidden lg:block w-20 h-20 transform scale-x-[-1]' />
 					</div>
 				</div>
 			</section>

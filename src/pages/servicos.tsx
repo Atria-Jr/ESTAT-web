@@ -21,14 +21,14 @@ function Servicos() {
                     <h3 className='text-[#329BD5] text-center font-bold lg:text-2xl'>Análise de Dados</h3>
                     <img src={analise} alt="Análise de Dados" className='px-4'/>
                     <p className='text-justify text-sm lg:text-base font-medium flex-1'>A análise de dados é um procedimento de averiguação, limpeza, transformação e modelagem de dados com o objetivo de encontrar informações úteis, apresentar conclusões e contribuir na tomada de decisões.</p>
-                    <a href="servicos/analise-de-dados" className='text-white bg-[#2F83AC] w-fit px-3 py-1 pointer'>Saiba Mais</a>
+                    <a href="/servicos/analise-de-dados" className='text-white bg-[#2F83AC] w-fit px-3 py-1 pointer'>Saiba Mais</a>
                 </article>
 
                 <article className='flex flex-col items-center gap-3 max-w-[400px] md:max-w-[385px] lg:max-w-[480px] aspect-square border-[#329BD5] border-3 p-5'>
                     <h3 className='text-[#329BD5] text-center font-bold lg:text-2xl'>Business Intelligence</h3>
                     <img src={business} alt="Business Intelligence" className='px-4'/>
                     <p className='text-justify text-sm lg:text-base font-medium flex-1'>Business Intelligence é o processo de coleta, organização, análise, compartilhamento e controle de informações.</p>
-                    <a href="#" className='text-white bg-[#2F83AC] w-fit px-3 py-1 pointer'>Saiba Mais</a>
+                    <a href="/servicos/business-intelligence" className='text-white bg-[#2F83AC] w-fit px-3 py-1 pointer'>Saiba Mais</a>
                 </article>
 
                 <article className='flex flex-col items-center gap-3 max-w-[400px] md:max-w-[385px] lg:max-w-[480px] aspect-square border-[#329BD5] border-3 p-5'>
@@ -49,7 +49,7 @@ function Servicos() {
                     <h3 className='text-[#329BD5] text-center font-bold lg:text-2xl'>Machine Learning (Modelagem Estatística)</h3>
                     <img src={machine} alt="machine learning" className='px-4'/>
                     <p className='text-justify text-sm lg:text-base font-medium flex-1'>Nosso serviço de Modelagem Estatística vai além da análise comum, criando "receitas" matemáticas que não apenas explicam os padrões em seus dados, mas também os utilizam para fazer previsões confiáveis.</p>
-                    <a href="servicos/machine-learning" className='text-white bg-[#2F83AC] w-fit px-3 py-1 pointer'>Saiba Mais</a>
+                    <a href="/servicos/machine-learning" className='text-white bg-[#2F83AC] w-fit px-3 py-1 pointer'>Saiba Mais</a>
                 </article>
 
                 <article className='flex flex-col items-center gap-3 max-w-[400px] md:max-w-[385px] lg:max-w-[480px] aspect-square border-[#329BD5] border-3 p-5'>
