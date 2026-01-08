@@ -9,6 +9,7 @@ import MachineLearning from "./pages/machine-learning";
 import Planejamento from "./pages/planejamento";
 import AnaliseDeDados from "./pages/analise-de-dados";
 import BusinessIntelligence from "./pages/business-Intelligence";
+import ValidacaoEstatistica from "./pages/validacao-estatistica";
 
 
 // Este arquivo aponta cada URL para um componente de página diferente.
@@ -52,6 +53,10 @@ const Routes = createBrowserRouter([
       {
         path: "servicos/planejamento-estrategico",
         element: <Planejamento />
+      },
+      {
+        path: "servicos/validacao-estatistica",
+        element: <ValidacaoEstatistica />
       }
     ]
     }
