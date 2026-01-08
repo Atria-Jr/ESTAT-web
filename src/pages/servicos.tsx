@@ -42,7 +42,7 @@ function Servicos() {
                     <h3 className='text-[#329BD5] text-center font-bold lg:text-2xl'>Validação Estatística</h3>
                     <img src={validacao} alt="Validação Estatística" className='px-4'/>
                     <p className='text-justify text-sm lg:text-base font-medium flex-1'>Nosso serviço de Validação Estatística aplica rigorosos testes matemáticos para confirmar suas hipóteses, oferecendo a segurança de que seus achados são confiáveis...</p>
-                    <a href="#" className='text-white bg-[#2F83AC] w-fit px-3 py-1 pointer'>Saiba Mais</a>
+                    <a href="/servicos/validacao-estatistica" className='text-white bg-[#2F83AC] w-fit px-3 py-1 pointer'>Saiba Mais</a>
                 </article>
 
                 <article className='flex flex-col items-center gap-3 max-w-[400px] md:max-w-[385px] lg:max-w-[480px] aspect-square border-[#329BD5] border-3 p-5'>
