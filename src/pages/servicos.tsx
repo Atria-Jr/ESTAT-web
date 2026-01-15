@@ -35,7 +35,7 @@ function Servicos() {
                     <h3 className='text-[#329BD5] text-center font-bold lg:text-2xl'>Consultoria Estatística</h3>
                     <img src={consultoria} alt="Consultoria Estatística" className='px-4'/>
                     <p className='text-justify text-sm lg:text-base font-medium flex-1'>Nossa Consultoria Analítica acompanha seu negócio em toda a jornada dos dados, garantindo que cada etapa, da coleta inicial à análise final, seja executada com máxima eficiência.</p>
-                    <a href="#" className='text-white bg-[#2F83AC] w-fit px-3 py-1 pointer'>Saiba Mais</a>
+                    <a href="/servicos/consultoria-estatistica" className='text-white bg-[#2F83AC] w-fit px-3 py-1 pointer'>Saiba Mais</a>
                 </article>
 
                 <article className='flex flex-col items-center gap-3 max-w-[400px] md:max-w-[385px] lg:max-w-[480px] aspect-square border-[#329BD5] border-3 p-5'>
