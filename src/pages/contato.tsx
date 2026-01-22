@@ -80,9 +80,12 @@ function Contato() {
             </a>
           </div>
 
-          <button className="mt-5 w-fit inline-block bg-[#1A485B] text-white font-semibold text-sm px-5 py-3 hover:opacity-90 transition">
+          <a
+            href="https://wa.me/551935216073"
+            className="mt-5 w-fit inline-block bg-[#1A485B] text-white font-semibold text-sm px-5 py-3 hover:opacity-90 transition"
+          >
             Agende uma Reunião
-          </button>
+          </a>
         </div>
 
         <div className="md:w-1/2 bg-[#1A485B] p-6 md:p-8">
