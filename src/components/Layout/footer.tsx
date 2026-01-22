@@ -1,43 +1,10 @@
 import { FaInstagram, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
-
-import Bj from "./../../assets/Logo BJ.png";
-import Fejesp from "./../../assets/logo Fejesp.png";
-import NUCA from "./../../assets/NUCLEO-CAMPINAS.png";
-import Unicamp from "./../../assets/logo unicamp.png";
-import Logo from "./../../assets/logo.png";
 import Logo_alterna from "./../../assets/logo altenativa footer.png";
 
 function Footer() {
   return (
     <footer className="mt-10">
-      <div className="flex flex-wrap items-center justify-center gap-10 lg:gap-40 bg-[#ccd9df] px-4 py-4">
-        <img
-          src={Bj}
-          className="h-8 sm:h-10 md:h-12 object-contain"
-          alt="Brasil Júnior"
-        />
-        <img
-          src={Fejesp}
-          className="h-8 sm:h-10 md:h-12 object-contain"
-          alt="FEJESP"
-        />
-        <img
-          src={NUCA}
-          className="h-8 sm:h-10 md:h-12 object-contain"
-          alt="Núcleo Campinas"
-        />
-        <img
-          src={Unicamp}
-          className="h-8 sm:h-10 md:h-12 object-contain"
-          alt="Unicamp"
-        />
-        <img
-          src={Logo}
-          className="h-8 sm:h-10 md:h-12 object-contain"
-          alt="Atria Jr"
-        />
-      </div>
-
+       
       <div className="bg-[#235F77] text-white">
         <div className="max-w-6xl mx-auto px-4 py-10 flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <div className="flex justify-start md:mr-8">

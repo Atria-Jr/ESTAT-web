@@ -41,23 +41,29 @@ function SetaIcon({ className = '' }) {
 function AnaliseDeDados() {
 	return (
 		<main>
-			{/* HERO */}
-			<section
-				className='relative py-8 bg-cover bg-center blu overflow-hidden'
-				style={{ backgroundImage: `url(${bgTop})` }}
-			>
-				{/* Overlay: leve blur + um pouco mais escuro */}
-				<div className='absolute inset-0 bg-black/55 backdrop-blur-sm' />
+		{/* HERO (mesmo para mobile e desktop) */}
+<section className='w-full'>
+  <div
+    className='relative py-16 sm:py-20 lg:py-24 bg-cover bg-center overflow-hidden'
+    style={{ backgroundImage: `url(${bgTop})` }}
+  >
+    {/* Overlay escuro */}
+    <div className='absolute inset-0 bg-[#1e4a5c]/75' />
 
-				{/* Conteúdo acima do overlay */}
-				<div className='relative max-w-6xl mx-auto px-4 text-center text-white'>
-					<h1 className='font-extrabold text-3xl lg:text-5xl mb-3'>Análise de Dados</h1>
-					<p className='text-sm lg:text-lg text-white/90 max-w-3xl mx-auto'>
-						Visualize seus dados de maneira inteligente, transformando-os em informações estratégicas.
-						Tenha seus analytics, modelos de previsão e saiba como as informações se correlacionam.
-					</p>
-				</div>
-			</section>
+    {/* Conteúdo */}
+    <div className='relative max-w-6xl mx-auto px-4 text-center text-white z-10'>
+      <h1 className='font-extrabold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl mb-6 leading-tight'>
+        Análise de Dados
+      </h1>
+
+      <p className='text-base sm:text-lg lg:text-2xl text-white/95 max-w-3xl mx-auto leading-relaxed font-medium text-balance'>
+        Visualize seus dados de maneira inteligente, transformando-os em informações estratégicas.
+        Tenha seus analytics, modelos de previsão e saiba como as informações se correlacionam.
+      </p>
+    </div>
+  </div>
+</section>
+
 
 			{/* O que é */}
 			<section className='py-16'>
@@ -78,83 +84,95 @@ function AnaliseDeDados() {
 				</div>
 			</section>
 
-			{/* Nossa abordagem analítica */}
-			<section className='py-10 bg-[#235F77] text-white'>
-				<div className='max-w-6xl mx-auto px-4'>
-					<h3 className='text-center text-xl lg:text-2xl font-semibold mb-8'>Nossa abordagem analítica</h3>
+{/* Nossa abordagem analítica */}
+<section className='py-10 bg-[#235F77] text-white'>
+	<div className='max-w-6xl mx-auto px-4'>
+		<h3 className='text-center text-xl lg:text-2xl font-semibold mb-8'>Nossa abordagem analítica</h3>
 
-					<div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
-						<article className='bg-white text-[#235F77] p-6 shadow-md'>
-							<h4 className='font-bold text-lg mb-3'>Organização e Limpeza de Dados</h4>
-							<p className='text-sm'>Tratamos e estruturamos seus dados brutos, removendo inconsistências e preparando-os para uma análise precisa e confiável.</p>
-						</article>
+		<div className='grid grid-cols-3 gap-3 md:gap-6'>
+			<article className='bg-white text-[#235F77] p-3 md:p-6 shadow-md aspect-square flex flex-col justify-center'>
+				<h4 className='font-bold text-xs md:text-lg mb-2 md:mb-3'>Organização e Limpeza de Dados</h4>
+				<p className='text-[10px] md:text-sm'>Tratamos e estruturamos seus dados brutos, removendo inconsistências e preparando-os para uma análise precisa e confiável.</p>
+			</article>
 
-						<article className='bg-white text-[#235F77] p-6 shadow-md'>
-							<h4 className='font-bold text-lg mb-3'>Extração de Medidas e Estatísticas</h4>
-							<p className='text-sm'>Aplicamos técnicas estatísticas para resumir suas informações, identificando os números e as métricas mais relevantes para seus objetivos.</p>
-						</article>
+			<article className='bg-white text-[#235F77] p-3 md:p-6 shadow-md aspect-square flex flex-col justify-center'>
+				<h4 className='font-bold text-xs md:text-lg mb-2 md:mb-3'>Extração de Medidas e Estatísticas</h4>
+				<p className='text-[10px] md:text-sm'>Aplicamos técnicas estatísticas para resumir suas informações, identificando os números e as métricas mais relevantes para seus objetivos.</p>
+			</article>
 
-						<article className='bg-white text-[#235F77] p-6 shadow-md'>
-							<h4 className='font-bold text-lg mb-3'>Visualização e Dashboards Intuitivos</h4>
-							<p className='text-sm'>Criamos gráficos, tabelas e painéis que convertem dados complexos em tendências e padrões fáceis de identificar visualmente.</p>
-						</article>
-					</div>
-				</div>
-			</section>
-
+			<article className='bg-white text-[#235F77] p-3 md:p-6 shadow-md aspect-square flex flex-col justify-center'>
+				<h4 className='font-bold text-xs md:text-lg mb-2 md:mb-3'>Visualização e Dashboards Intuitivos</h4>
+				<p className='text-[10px] md:text-sm'>Criamos gráficos, tabelas e painéis que convertem dados complexos em tendências e padrões fáceis de identificar visualmente.</p>
+			</article>
+		</div>
+	</div>
+</section>
 			{/* Benefícios */}
 			<section className='py-12'>
 				<div className='max-w-6xl mx-auto px-4 text-center'>
 					<h2 className='text-[#235F77] font-bold text-2xl lg:text-3xl mb-8'>Benefícios Para o Seu Projeto</h2>
 					<p className='text-[#676A6F] mb-10'>Com a nossa análise de dados, você:</p>
 
-					<div className='grid grid-cols-1 gap-6'>
-						<div className='bg-white shadow-lg p-6 flex items-center gap-6'>
-							<img src={img4} className='w-24' alt='Atendimento' />
+					<div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+						<div className='bg-white shadow-lg p-6 flex flex-col md:flex-row items-center gap-4 h-48'>
+							<img src={img4} className='w-20 h-20 object-contain flex-shrink-0' alt='Atendimento' />
 							<div className='text-left'>
-								<h4 className='font-semibold text-[#235F77]'>Recebe um atendimento humano e personalizado</h4>
-								<p className='text-[#676A6F]'>Atendimento humano no canal de comunicação que preferir.</p>
+								<h4 className='font-semibold text-[#235F77] mb-2'>Recebe um atendimento humano e personalizado</h4>
+								<p className='text-[#676A6F] text-sm'>Atendimento humano no canal de comunicação que preferir.</p>
 							</div>
 						</div>
 
-						<div className='bg-white shadow-lg p-6 flex items-center gap-6'>
-							<div className='flex-1 text-left'>
-								<h4 className='font-semibold text-[#235F77]'>Ganha a capacidade de identificar padrões</h4>
-								<p className='text-[#676A6F]'>Compare resultados e detecte anomalias que passam despercebidas em análises manuais.</p>
+						<div className='bg-white shadow-lg p-6 flex flex-col md:flex-row items-center gap-4 h-48'>
+							<img src={img7} className='w-20 h-20 object-contain flex-shrink-0 md:order-2' alt='Padrões' />
+							<div className='text-left md:order-1'>
+								<h4 className='font-semibold text-[#235F77] mb-2'>Ganha a capacidade de identificar padrões</h4>
+								<p className='text-[#676A6F] text-sm'>Compare resultados e detecte anomalias que passam despercebidas em análises manuais.</p>
 							</div>
-							<img src={img7} className='w-28' alt='Padrões' />
 						</div>
 
-						<div className='bg-white shadow-lg p-6 flex items-center gap-6'>
-							<img src={img1} className='w-28' alt='Processo Rápido' />
+						<div className='bg-white shadow-lg p-6 flex flex-col md:flex-row items-center gap-4 h-48'>
+							<img src={img1} className='w-20 h-20 object-contain flex-shrink-0' alt='Processo Rápido' />
 							<div className='text-left'>
-								<h4 className='font-semibold text-[#235F77]'>Processo rápido e fundamentado</h4>
-								<p className='text-[#676A6F]'>Entregamos conclusões e estratégias com evidências sólidas, mesmo sem conhecimento técnico avançado por parte do cliente.</p>
+								<h4 className='font-semibold text-[#235F77] mb-2'>Processo rápido e fundamentado</h4>
+								<p className='text-[#676A6F] text-sm'>Entregamos conclusões e estratégias com evidências sólidas, mesmo sem conhecimento técnico avançado por parte do cliente.</p>
 							</div>
 						</div>
 
-						<div className='bg-white shadow-lg p-6 flex items-center gap-6'>
-							<div className='flex-1 text-left'>
-								<h4 className='font-semibold text-[#235F77]'>Qualidade Unicamp com preços competitivos</h4>
-								<p className='text-[#676A6F]'>Trabalhamos com padrões acadêmicos e entrega profissional ao seu projeto.</p>
+						<div className='bg-white shadow-lg p-6 flex flex-col items-center gap-4 h-48'>
+							<div className='text-left flex-1'>
+								<h4 className='font-semibold text-[#235F77] mb-2'>Qualidade Unicamp com preços competitivos</h4>
+								<p className='text-[#676A6F] text-sm'>Trabalhamos com padrões acadêmicos e entrega profissional ao seu projeto.</p>
 							</div>
-							<img src={img5} className='w-28' alt='Unicamp e Preço' />
-							<img src={img2} className='w-28' alt='Unicamp e Preço' />
+							<div className='flex gap-4 items-center justify-center'>
+								<img src={img5} className='w-16 h-16 object-contain' alt='Unicamp' />
+								<img src={img2} className='w-16 h-16 object-contain' alt='Preço' />
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
 			{/* CTA */}
-			<section className='py-8 bg-[#235F77] text-white'>
+			<section className='py-3 bg-[#235F77] text-white'>
 				<div className='max-w-6xl mx-auto px-4 text-center'>
 					<p className='mb-6 text-lg'>
 						Dê o próximo passo para entender seus dados. Fale com nossos especialistas e transforme suas informações em insights poderosos.
 					</p>
+					<div>
 
+					</div>
 					<div className='flex justify-center items-center gap-4 text-white'>
-						<SetaIcon className='hidden lg:block w-20 h-20' />
 
+
+					</div>
+					
+				</div>
+				
+			</section>
+
+			<section className='text-white flex justify-center items-center
+			pt-10'>
+				
 						<a
 							href='https://wa.me/551935216073'
 							target='_blank'
@@ -163,10 +181,6 @@ function AnaliseDeDados() {
 						>
 							CONTATE-NOS
 						</a>
-
-						<SetaIcon className='hidden lg:block w-20 h-20 transform scale-x-[-1]' />
-					</div>
-				</div>
 			</section>
 		</main>
 	)
