@@ -2,11 +2,15 @@ import HeroImage from "./../assets/Consultoria-Estatistica/Hero-Image.jpg"
 import OQueEImage from "./../assets/Consultoria-Estatistica/O-Que-E-Image.jpg"
 import OQueEMobile from "./../assets/Consultoria-Estatistica/O-Que-E-Mobile.png"
 import HeroMobile from "./../assets/Consultoria-Estatistica/Hero-Mobile.png"
+import BeneficiosImage from "./../assets/Consultoria-Estatistica/Beneficios-Image.jpg"
+import BeneficiosBackgroundImage from "./../assets/Consultoria-Estatistica/Contato-Background-Image.png"
 import BeneficiosMobile from "./../assets/Consultoria-Estatistica/Beneficios-Mobile.png"
 import ContatoMobile01 from "./../assets/Validacao-Estatistica/Contato-Mobile-01.png"
 import ContatoMobile02 from "./../assets/Validacao-Estatistica/Contato-Mobile-02.png"
 import ContatoMobile03 from "./../assets/Validacao-Estatistica/Contato-Mobile-03.png"
 import ContatoMobile04 from "./../assets/Validacao-Estatistica/Contato-Mobile-04.png"
+import ContatoMobile05 from "./../assets/Validacao-Estatistica/Contato-Mobile-05.png"
+import seta from '../assets/Serviços/seta.svg';
 
 function ConsultoriaEstatistica() {
     return (
@@ -20,7 +24,7 @@ function ConsultoriaEstatistica() {
                         <img src={HeroMobile} className="lg:w-[500px] w-[80%] lg:ml-12 not-lg:ml-auto not-lg:mr-auto lg:hidden"></img>
                         <p className="text-[20px] lg:text-white font-medium text-left mt-4">Nossa Consultoria Analítica acompanha seu negócio <span className="lg:text-[#A3F1F7] text-[#235F77]">em toda a jornada dos dados, garantindo que cada etapa, da coleta inicial à análise final, seja executada com máxima eficiência.</span><br></br> Nós cuidamos da complexidade técnica para que você possa focar no seu objetivo: tomar decisões seguras.</p>
                     </div>
-                    <img src={HeroImage} className="lg:w-[50%] object-cover not-lg:hidden rounded-tl-[48px] rounded-bl-[48px]"></img>
+                    <img src={HeroImage} className="lg:w-[50%] object-cover not-lg:hidden rounded-tl-[48px] rounded-bl-[48px] opacity-60"></img>
                 </div>
             </div>
 
@@ -49,7 +53,7 @@ function ConsultoriaEstatistica() {
                             Planejamento e Coleta de Dados
                         </div>
                         <p className="text-[#555] text-center font-bold text-md leading-relaxed mt-4">
-                             Auxiliamos na definição da melhor estratégia e nas ferramentas para coletar os dados necessários para seu projeto, seja através de pesquisas, extração de sistemas ou outras fontes.
+                            Auxiliamos na definição da melhor estratégia e nas ferramentas para coletar os dados necessários para seu projeto, seja através de pesquisas, extração de sistemas ou outras fontes.
                         </p>
                     </div>
 
@@ -79,7 +83,7 @@ function ConsultoriaEstatistica() {
                             Aplicamos as técnicas adequadas aos seus desafios para extrair as respostas que realmente apoiam suas metas estratégicas.
                         </p>
                     </div>
-                    
+
                     <div className="relative w-full max-w-[320px] h-[300px] border border-gray-300 shadow-2xl p-8 flex flex-col justify-center bg-white">
                         <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#2D708E] text-white font-bold text-center py-3 px-4 w-[90%] text-lg">
                             Entrega de Resultados Acionáveis
@@ -93,8 +97,8 @@ function ConsultoriaEstatistica() {
             </div>
 
             {/* Benefício */}
-            <div className="pt-24 pb-24 text-center bg-[#2F83AC]">
-                <h1 className="font-bold lg:text-4xl not-lg:text-3xl text-white">O BENEFÍCIO DIRETO PARA O SEU PROJETO</h1>
+            <div className="pt-24 pb-24 text-center bg-[#000000] bg-cover bg-center" style={{ backgroundImage: `linear-gradient(rgba(7,27,37,0.8), rgba(7,27,37,0.8)),url(${BeneficiosImage})` }}>
+                <h1 className="font-bold lg:text-4xl not-lg:text-3xl text-white bg-[url()]">O BENEFÍCIO DIRETO PARA O SEU PROJETO</h1>
                 <img src={BeneficiosMobile} className="w-[75%] max-w-[500px] lg:hidden ml-auto mr-auto"></img>
                 <p className="ml-auto mr-auto mt-12 text-justify lg:w-[900px] font-semibold lg:text-2xl text-lg pl-8 pr-8 text-white">
                     Com nossa consultoria, você ganha um <span className="text-[#91C9ED]">departamento de dados sob demanda, totalmente focado em seus objetivos.</span> O resultado é a tranquilidade de saber que suas decisões são suportadas por análises robustas, permitindo que você se concentre no crescimento e na gestão do seu negócio.
@@ -102,48 +106,57 @@ function ConsultoriaEstatistica() {
             </div>
 
             {/* Contate-nos */}
-            <section className="pt-16 px-4 font-sans">
-                <div className="max-auto max-w-5xl ml-auto mr-auto">
-                    <h2 className="text-center text-gray-600 font-bold text-4xl mb-12 tracking-wide uppercase">
-                        Contate-nos
-                    </h2>
+            <section className='py-14'>
+                <div className='max-w-5xl mx-auto px-4'>
+                    <h3 className='text-center text-xl lg:text-2xl font-semibold text-[#235F77] mb-10'>Nossos Diferenciais</h3>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
-                        <div className="lg:bg-linear-to-r lg:from-[#3197d1] lg:to-[#214e66] p-8 min-h-[180px] flex items-center justify-center text-center lg:shadow-lg">
-                            <img src={ContatoMobile01} className="lg:hidden w-[180px]"></img>
-                            <p className="lg:text-white lg:text-xl text-md leading-tight">
-                                Recebe um atendimento humano e personalizado no canal de comunicação que preferir;
-                            </p>
-                        </div>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto'>
+                        <article className='bg-white border-4 border-[#2F83AC] p-8 flex flex-col items-center justify-center text-center aspect-square'>
+                            <img src={ContatoMobile01} className='w-28 mb-5' alt='Atendimento' />
+                            <div>
+                                <h4 className='font-semibold text-[#235F77] text-base mb-2'>Recebe um atendimento humano e personalizado no canal de comunicação que preferir;</h4>
+                            </div>
+                        </article>
 
-                        <div className="lg:bg-linear-to-r lg:from-[#3197d1] lg:to-[#1a3d4f] p-8 min-h-[180px] flex items-center justify-center text-center lg:shadow-lg">
-                            <p className="lg:text-white lg:text-xl text-md leading-tight">
-                                Ganha a capacidade de identificar padrões, comparar resultados e detectar anomalias
-                            </p>
-                            <img src={ContatoMobile02} className="lg:hidden w-[180px]"></img>
-                        </div>
+                        <article className='bg-white border-4 border-[#2F83AC] p-8 flex flex-col items-center justify-center text-center aspect-square'>
+                            <img src={ContatoMobile02} className='w-28 mb-5' alt='Padrões' />
+                            <div>
+                                <h4 className='font-semibold text-[#235F77] text-base mb-2'>Ganha a capacidade de identificar padrões, comparar resultados e detectar anomalias;</h4>
+                            </div>
+                        </article>
 
-                        <div className="lg:bg-linear-to-r lg:from-[#3197d1] lg:to-[#215a7a] p-8 min-h-[180px] flex items-center justify-center text-center lg:shadow-lg">
-                            <img src={ContatoMobile03} className="lg:hidden w-[180px]"></img>
-                            <p className="lg:text-white lg:text-xl text-md leading-tight">
-                                Realiza esse processo de forma rápida, fundamentando suas próximas conclusões e estratégias em evidências sólidas, mesmo sem conhecimento técnico avançado.
-                            </p>
-                        </div>
+                        <article className='bg-white border-4 border-[#2F83AC] p-8 flex flex-col items-center justify-center text-center aspect-square'>
+                            <img src={ContatoMobile03} className='w-28 mb-5' alt='Processo' />
+                            <div>
+                                <h4 className='font-semibold text-[#235F77] text-base mb-2'>
+                                    Realiza esse processo de forma rápida, fundamentando suas provisões, conclusões e estratégias em evidências sólidas, mesmo sem
+                                    conhecimento técnico avançado.
+                                </h4>
+                            </div>
+                        </article>
 
-                        <div className="lg:bg-linear-to-r lg:from-[#3197d1] lg:to-[#163645] p-8 min-h-[180px] flex items-center justify-center text-center lg:shadow-lg">
-                            <p className="lg:text-white lg:text-xl text-md leading-tight font-medium">
-                                Tudo isso com o padrão de qualidade Unicamp e com preços abaixo do mercado!
-                            </p>
-                            <img src={ContatoMobile04} className="lg:hidden w-[180px]"></img>
-                        </div>
-                    </div>
-
-                    <div className="text-center max-w-3xl mx-auto not-lg:hidden">
-                        <p className="text-gray-700 font-semibold leading-relaxed text-xl">
-                            Deixe a complexidade dos dados conosco. Fale com um de nossos consultores e descubra como uma parceria analítica pode impulsionar seus resultados.
-                        </p>
+                        <article className='bg-white border-4 border-[#2F83AC] p-8 flex flex-col items-center justify-center text-center aspect-square'>
+                            <div className='flex items-center gap-3 mb-5'>
+                                <img src={ContatoMobile04} className='w-20' alt='Preço' />
+                                <img src={ContatoMobile05} className='w-20' alt='Unicamp' />
+                            </div>
+                            <div>
+                                <h4 className='font-semibold text-[#235F77] text-base mb-2'>Tudo isso com o padrão de qualidade Unicamp e com preços abaixo do mercado!</h4>
+                            </div>
+                        </article>
                     </div>
                 </div>
+            </section>
+
+            {/* Contate nos */}
+            <section className="bg-[#2F83AC] text-center py-4 px-8 m-0 md:hidden block">
+                <h1 className="font-medium text-white">Não baseie suas decisões no acaso. Fale com nossos especialistas e valide seus resultados com rigor científico.</h1>
+            </section>
+
+            <section className='my-15 flex justify-center items-end gap-5 md:hidden block'>
+                <img src={seta} alt="seta" className='lg:hidden w-[40px] sm:w-[80px] mb-5' />
+                <a href="https://wa.me/551935216073" target='_blank' className='w-[300px] h-[68px] bg-[#1A485B] text-center text-white font-semibold text-lg px-2 md:px-15 py-5'>CONTATE-NOS</a>
+                <img src={seta} alt="seta" className='lg:hidden transform scale-x-[-1] w-[40px] sm:w-[80px] mb-5' />
             </section>
         </div>
     )

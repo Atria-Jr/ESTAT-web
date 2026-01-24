@@ -7,6 +7,8 @@ import ContatoMobile01 from "./../assets/Validacao-Estatistica/Contato-Mobile-01
 import ContatoMobile02 from "./../assets/Validacao-Estatistica/Contato-Mobile-02.png"
 import ContatoMobile03 from "./../assets/Validacao-Estatistica/Contato-Mobile-03.png"
 import ContatoMobile04 from "./../assets/Validacao-Estatistica/Contato-Mobile-04.png"
+import ContatoMobile05 from "./../assets/Validacao-Estatistica/Contato-Mobile-05.png"
+import seta from '../assets/Serviços/seta.svg';
 
 function ValidacaoEstatistica() {
     return (
@@ -19,7 +21,7 @@ function ValidacaoEstatistica() {
                         <p className="text-[20px] font-medium text-left">Você observou um resultado, mas como saber se ele é estatisticamente real ou apenas fruto do acaso? </p>
                         <img src={HeroImage} className="lg:w-[500px] w-[80%] lg:ml-12 not-lg:ml-auto not-lg:mr-auto lg:hidden"></img>
                         <p className="text-[20px] font-medium text-left mt-4">Nosso serviço de Validação Estatística aplica rigorosos testes matemáticos para confirmar suas hipóteses, oferecendo a segurança de que seus achados são confiáveis.
-Nós separamos a coincidência da evidência, para que suas conclusões sejam indiscutíveis.</p>
+                            Nós separamos a coincidência da evidência, para que suas conclusões sejam indiscutíveis.</p>
                     </div>
                     <img src={HeroImage} className="lg:w-[500px] ml-12 not-lg:hidden"></img>
                 </div>
@@ -44,9 +46,9 @@ Nós separamos a coincidência da evidência, para que suas conclusões sejam in
                 </h2>
 
                 <div className="flex flex-col lg:flex-row justify-center items-center gap-16 lg:gap-12 max-w-[1100px] mx-auto">
-                    
+
                     <div className="relative w-full max-w-[320px] h-[300px] border border-gray-300 shadow-2xl p-8 flex flex-col justify-center bg-white">
-                        <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#2D708E] text-white font-bold text-center py-3 px-4 w-[90%] text-lg">
+                        <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#2D708E] text-white font-bold text-center py-3 px-4 w-[90%] text-lg h-20">
                             Testes de Comparação de Grupos
                         </div>
                         <p className="text-[#555] text-center font-bold text-md leading-relaxed mt-4">
@@ -67,67 +69,84 @@ Nós separamos a coincidência da evidência, para que suas conclusões sejam in
                     </div>
 
                     <div className="relative w-full max-w-[320px] h-[300px] border border-gray-300 shadow-2xl p-8 flex flex-col justify-center bg-white">
-                        <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#2D708E] text-white font-bold text-center py-3 px-4 w-[90%] text-lg">
-                            Análises de Associação
+                        <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#2D708E] text-white font-bold text-center py-3 px-4 w-[90%] text-lg h-20 flex">
+                            <h1 className="mt-auto mb-auto ml-auto mr-auto">Análises de Associação</h1>
                         </div>
                         <p className="text-[#555] text-center font-bold text-md leading-relaxed mt-4">
                             Avaliamos a força da relação entre diferentes variáveis para entender se elas estão, de fato, conectadas de forma relevante.
                         </p>
                     </div>
-                    
+
                 </div>
             </div>
 
-            {/* Benefício */ }
-            <div className="pt-24 pb-24 text-center mt-24" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${BeneficiosImage})`}}>
+            {/* Benefício */}
+            <div className="pt-24 pb-24 text-center mt-24 bg-[#2F83AC]" style={{
+                backgroundImage: 'none',
+                ...(window.innerWidth >= 1024 && {
+                    backgroundImage: `
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(${BeneficiosImage})
+      `
+                })
+            }}>
                 <h1 className="font-bold text-4xl text-white">O BENEFÍCIO DIRETO PARA O SEU PROJETO</h1>
                 <img src={BeneficiosMobile} className="w-[75%] max-w-[500px] lg:hidden ml-auto mr-auto"></img>
-                <p className="ml-auto mr-auto mt-12 text-justify lg:w-[900px] font-semibold lg:text-2xl text-lg pl-8 pr-8 text-white">Com a validação estatística, você obtém a certeza de que suas conclusões são defensáveis e baseadas em evidências matemáticas, não em sorte. Isso permite publicar um achado, lançar uma iniciativa ou implementar uma mudança com um nível muito maior de segurança e credibilidade.</p>
+                <p className="ml-auto mr-auto mt-12 text-justify lg:w-[900px] font-semibold lg:text-2xl text-lg pl-8 pr-8 text-white">Com a validação estatística, você obtém a <span className="text-[#A3F2F7]">certeza de que suas conclusões são defensáveis e baseadas em evidências matemáticas</span>, não em sorte. Isso permite publicar um achado, lançar uma iniciativa ou implementar uma mudança com um nível muito maior de segurança e credibilidade.</p>
             </div>
 
             {/* Contate-nos */}
-            <section className="pt-16 px-4 font-sans">
-                <div className="max-auto max-w-5xl ml-auto mr-auto">
-                    <h2 className="text-center text-gray-600 font-bold text-4xl mb-12 tracking-wide uppercase">
-                    Contate-nos
-                    </h2>
+            <section className='py-14'>
+                <div className='max-w-5xl mx-auto px-4'>
+                    <h3 className='text-center text-xl lg:text-2xl font-semibold text-[#235F77] mb-10'>Nossos Diferenciais</h3>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
-                    <div className="lg:bg-linear-to-r lg:from-[#3197d1] lg:to-[#214e66] p-8 min-h-[180px] flex items-center justify-center text-center lg:shadow-lg">
-                        <img src={ContatoMobile01} className="lg:hidden w-[180px]"></img>
-                        <p className="lg:text-white lg:text-xl text-md leading-tight">
-                        Recebe um atendimento humano e personalizado no canal de comunicação que preferir;
-                        </p>
-                    </div>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto'>
+                        <article className='bg-white border-4 border-[#2F83AC] p-8 flex flex-col items-center justify-center text-center aspect-square'>
+                            <img src={ContatoMobile01} className='w-28 mb-5' alt='Atendimento' />
+                            <div>
+                                <h4 className='font-semibold text-[#235F77] text-base mb-2'>Recebe um atendimento humano e personalizado no canal de comunicação que preferir;</h4>
+                            </div>
+                        </article>
 
-                    <div className="lg:bg-linear-to-r lg:from-[#3197d1] lg:to-[#1a3d4f] p-8 min-h-[180px] flex items-center justify-center text-center lg:shadow-lg">
-                        <p className="lg:text-white lg:text-xl text-md leading-tight">
-                        Ganha a capacidade de identificar padrões, comparar resultados e detectar anomalias
-                        </p>
-                        <img src={ContatoMobile02} className="lg:hidden w-[180px]"></img>
-                    </div>
+                        <article className='bg-white border-4 border-[#2F83AC] p-8 flex flex-col items-center justify-center text-center aspect-square'>
+                            <img src={ContatoMobile02} className='w-28 mb-5' alt='Padrões' />
+                            <div>
+                                <h4 className='font-semibold text-[#235F77] text-base mb-2'>Ganha a capacidade de identificar padrões, comparar resultados e detectar anomalias;</h4>
+                            </div>
+                        </article>
 
-                    <div className="lg:bg-linear-to-r lg:from-[#3197d1] lg:to-[#215a7a] p-8 min-h-[180px] flex items-center justify-center text-center lg:shadow-lg">
-                        <img src={ContatoMobile03} className="lg:hidden w-[180px]"></img>
-                        <p className="lg:text-white lg:text-xl text-md leading-tight">
-                        Realiza esse processo de forma rápida, fundamentando suas próximas conclusões e estratégias em evidências sólidas, mesmo sem conhecimento técnico avançado.
-                        </p>
-                    </div>
+                        <article className='bg-white border-4 border-[#2F83AC] p-8 flex flex-col items-center justify-center text-center aspect-square'>
+                            <img src={ContatoMobile03} className='w-28 mb-5' alt='Processo' />
+                            <div>
+                                <h4 className='font-semibold text-[#235F77] text-base mb-2'>
+                                    Realiza esse processo de forma rápida, fundamentando suas provisões, conclusões e estratégias em evidências sólidas, mesmo sem
+                                    conhecimento técnico avançado.
+                                </h4>
+                            </div>
+                        </article>
 
-                    <div className="lg:bg-linear-to-r lg:from-[#3197d1] lg:to-[#163645] p-8 min-h-[180px] flex items-center justify-center text-center lg:shadow-lg">
-                        <p className="lg:text-white lg:text-xl text-md leading-tight font-medium">
-                        Tudo isso com o padrão de qualidade Unicamp e com preços abaixo do mercado!
-                        </p>
-                        <img src={ContatoMobile04} className="lg:hidden w-[180px]"></img>
-                    </div>
-                    </div>
-
-                    <div className="text-center max-w-3xl mx-auto not-lg:hidden">
-                    <p className="text-gray-700 font-semibold leading-relaxed text-xl">
-                        Não baseie suas decisões no acaso. Fale com nossos especialistas e valide seus resultados com rigor científico.
-                    </p>
+                        <article className='bg-white border-4 border-[#2F83AC] p-8 flex flex-col items-center justify-center text-center aspect-square'>
+                            <div className='flex items-center gap-3 mb-5'>
+                                <img src={ContatoMobile04} className='w-20' alt='Preço' />
+                                <img src={ContatoMobile05} className='w-20' alt='Unicamp' />
+                            </div>
+                            <div>
+                                <h4 className='font-semibold text-[#235F77] text-base mb-2'>Tudo isso com o padrão de qualidade Unicamp e com preços abaixo do mercado!</h4>
+                            </div>
+                        </article>
                     </div>
                 </div>
+            </section>
+
+            {/* Contate nos */}
+            <section className="bg-[#2F83AC] text-center py-4 px-8 m-0 md:hidden block">
+                <h1 className="font-medium text-white">Não baseie suas decisões no acaso. Fale com nossos especialistas e valide seus resultados com rigor científico.</h1>
+            </section>
+
+            <section className='my-15 flex justify-center items-end gap-5 md:hidden block'>
+                <img src={seta} alt="seta" className='lg:hidden w-[40px] sm:w-[80px] mb-5' />
+                <a href="https://wa.me/551935216073" target='_blank' className='w-[300px] h-[68px] bg-[#1A485B] text-center text-white font-semibold text-lg px-2 md:px-15 py-5'>CONTATE-NOS</a>
+                <img src={seta} alt="seta" className='lg:hidden transform scale-x-[-1] w-[40px] sm:w-[80px] mb-5' />
             </section>
         </div>
     )
