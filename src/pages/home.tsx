@@ -27,11 +27,11 @@ import { HiOutlineMail } from "react-icons/hi";
 import Slider from '../components/Slider/slider'
 import { useState, type Key } from 'react'
 import { SwiperSlide } from 'swiper/react'
+import { useNavigate } from 'react-router-dom'
 
 
 function Home() {
-
-
+  const navigate = useNavigate()
 
   const [slideAtivo, setSlideAtivo] = useState(1);
   const [swiper, setSwiper] = useState<any | null>(null);
@@ -89,16 +89,16 @@ function Home() {
     )
   }
 
-  function ServicosCard(imageSrc: string, title: string, label: string) {
+  function ServicosCard(imageSrc: string, title: string, label: string, linkUrl: string) {
     return (
-      <div className='bg-[#1A485B] shadow-gray-800 shadow-lg flex flex-col h-full w-full'>
+      <div className='not-md:bg-[#329BD5] bg-[#1A485B] shadow-gray-800 shadow-lg flex flex-col h-full w-full'>
         <img className='w-full h-35 object-cover ml-auto mr-auto' src={imageSrc}></img>
         <div className=' pl-8 pr-8 pt-4'>
           <h1 className='text-white font-medium sm:text-3xl text-lg mb-4 whitespace-normal'>{title}</h1>
           <h2 className='text-white font-medium text-[17px] whitespace-normal'>{label}</h2>
         </div>
         <div className='text-right p-4 mt-auto align-bottom  w-full'>
-          <button className='bg-white p-1'>Saiba Mais</button>
+          <button className='bg-white p-1 cursor-pointer' onClick={() => navigate(linkUrl)}>Saiba Mais</button>
         </div>
       </div>
     )
@@ -125,12 +125,12 @@ function Home() {
 
 
   const slides: any = [
-    ServicosCard(Servico01, "Planejamento de Experimento", "Desenhamos a estrutura estatística do seu estudo para validar hipóteses com precisão, do cálculo amostral à definição de variáveis e formulários otimizados."),
-    ServicosCard(Servico02, "Análise de Dados", "Tratamos, organizamos e interpretamos seus dados para revelar padrões e gerar insights claros, com dashboards e visualizações intuitivas."),
-    ServicosCard(Servico03, "Validação Estatística", "Aplicamos testes estatísticos para comprovar se os resultados são reais ou fruto do acaso, garantindo decisões seguras e publicações confiáveis."),
-    ServicosCard(Servico04, "Business Intelligence (BI)", "Construímos dashboards interativos que reúnem suas métricas em um só lugar, revelando oportunidades, tendências e caminhos de crescimento."),
-    ServicosCard(Servico05, "Consultoria Estatística", "Acompanhamos todo o ciclo analítico, do planejamento à entrega de insights, para transformar informações em resultados concretos e confiáveis."),
-    ServicosCard(Servico06, "Modelagem Estatística (Machine Learning)", "Criamos modelos e algoritmos que explicam e antecipam tendências, otimizam processos e aumentam a precisão das suas estratégias"),
+    ServicosCard(Servico01, "Planejamento de Experimento", "Desenhamos a estrutura estatística do seu estudo para validar hipóteses com precisão, do cálculo amostral à definição de variáveis e formulários otimizados.", "servicos/planejamento-estrategico"),
+    ServicosCard(Servico02, "Análise de Dados", "Tratamos, organizamos e interpretamos seus dados para revelar padrões e gerar insights claros, com dashboards e visualizações intuitivas.", "/servicos/analise-de-dados"),
+    ServicosCard(Servico03, "Validação Estatística", "Aplicamos testes estatísticos para comprovar se os resultados são reais ou fruto do acaso, garantindo decisões seguras e publicações confiáveis.", "servicos/validacao-estatistica"),
+    ServicosCard(Servico04, "Business Intelligence (BI)", "Construímos dashboards interativos que reúnem suas métricas em um só lugar, revelando oportunidades, tendências e caminhos de crescimento.", "/servicos/business-intelligence"),
+    ServicosCard(Servico05, "Consultoria Estatística", "Acompanhamos todo o ciclo analítico, do planejamento à entrega de insights, para transformar informações em resultados concretos e confiáveis.", "servicos/consultoria-estatistica"),
+    ServicosCard(Servico06, "Modelagem Estatística (Machine Learning)", "Criamos modelos e algoritmos que explicam e antecipam tendências, otimizam processos e aumentam a precisão das suas estratégias", "/servicos/machine-learning"),
   ]
 
   return (
@@ -139,7 +139,7 @@ function Home() {
       <div className="w-full xl:w-300 xl:ml-auto xl:mr-auto">
         <div className='lg:flex justify-between lg:pt-24 lg:pr-24 lg:pl-24 md:pt-20 md:pr-20 md:pl-20 p-4 xl:pr-0 xl:pl-0'>
           <div className="lg:w-[60%]">
-            <h1 className="text-[#235f77] font-extrabold lg:text-6xl md:text-4xl text-3xl">TRANSFORMANDO DADOS<br /> EM <span className="text-[#329bd5]">DECISÕES INTELIGENTES</span></h1>
+            <h1 className="text-[#235f77] font-extrabold lg:text-6xl md:text-4xl text-3xl">TRANSFORMANDO DADOS<br className='not-lg:hidden' /> EM <span className="text-[#329bd5]">DECISÕES INTELIGENTES</span></h1>
             <h3 className="lg:text-[23px] text-[16px] mt-4 text-[#2789A7] font-medium">NÓS DA ESTAT JÚNIOR, CONECTAMOS INOVAÇÃO, CIÊNCIA E IMPACTO PARA TRANSFORMAR DESAFIOS EM OPORTUNIDADES.</h3>
           </div>
           <img className='lg:w-[40%] mt-4 object-contain rounded-2xl' src={HeroImage}></img>
@@ -147,7 +147,7 @@ function Home() {
         <div className='w-full text-center'>
           <h1 className='mt-12 text-[#235F77] lg:text-lg sm:text-xl font-medium sm:mb-12 mb-4 not-sm:pl-8 not-sm:pr-8'>Na Estat Júnior o foco é encontrar a melhor solução para você!</h1>
           <div className='flex justify-between lg:pl-12 lg:pr-12 pl-4 pr-4 pb-10'>
-            {HeroCard("30+", "Anos de Mercado")}
+            {HeroCard("+30", "Anos de Mercado")}
             {HeroCard("+130", "Projetos")}
             {HeroCard("9.25", "satifação de Projetos")}
             {HeroCard("100%", "Qualidade da Unicamp")}
@@ -160,7 +160,9 @@ function Home() {
         <div className='xl:w-300 xl:ml-auto xl:mr-auto'>
           <div className='flex justify-between md:pl-24 md:pr-24 pl-4 pr-4 xl:pr-0 xl:pl-0'>
             <div className='w-full lg:w-[60%]'>
-              <h1 className='text-white font-extrabold sm:text-4xl text-4xl'>SOBRE NÓS</h1>
+              <div className='w-full text-center'>
+                <h1 className='text-white font-extrabold sm:text-4xl text-4xl'>SOBRE NÓS</h1>
+              </div>
               <h2 className='text-white sm:text-[22px] text-[18px] mt-10 font-medium'>A Estat Júnior é uma empresa formada por graduandos em Estatística da Unicamp, dedicada a transformar dados em soluções inteligentes. Há mais de 30 anos, unimos conhecimento técnico e inovação para apoiar empresas e pesquisadores em suas decisões e impulsionar o desenvolvimento do Brasil.</h2>
             </div>
             <img src={SobreImage} className='w-0 lg:w-[35%] hidden lg:block object-contain ml-8'></img>
@@ -204,7 +206,7 @@ function Home() {
               return (
                 <div
                   key={originalIndex}
-                  className={"h-3 rounded-full transition-all duration-300 " + (originalIndex === slideAtivo ? "w-6 bg-[#1A485B]" : "w-3 bg-[#1A485B]/50")}
+                  className={"h-3 rounded-full transition-all duration-300 " + (originalIndex === slideAtivo ? "w-6 bg-[#329BD5]" : "w-3 bg-[#329BD5]/50")}
                 ></div>
               );
             })}
@@ -212,7 +214,7 @@ function Home() {
         </div>
         <div className='text-center mt-12 w-full'>
           <h2 className='text-[#676A6F] md:text-4xl not-md:text-xl font-medium lg:w-220 ml-auto mr-auto'>Fale com nossos especialistas e descubra como a Estat Júnior pode impulsionar o seu projeto.</h2>
-          <button className='mt-4 p-3 border-[#329BD5] border-2 shadow-sm text-[#329BD5] font-medium'>Agende uma Reunião</button>
+          <button onClick={() => navigate("/contatos")} className='cursor-pointer mt-4 p-3 border-[#329BD5] border-2 shadow-sm text-[#329BD5] font-medium'>Agende uma Reunião</button>
         </div>
       </div>
 
@@ -306,9 +308,11 @@ function Home() {
             </a>
           </div>
 
-          <button className="mt-5 w-fit inline-block bg-[#1A485B] text-white font-medium text-sm px-5 py-3 hover:opacity-90 transition">
-            Agende uma Reunião
-          </button>
+          <div className='w-full text-center'>
+            <button onClick={() => navigate("/contatos")} className="cursor-pointer mt-5 w-fit inline-block md:bg-[#1A485B] bg-[#329BD5] text-white font-medium text-sm px-5 py-3 hover:opacity-90 transition">
+              Agende uma Reunião
+            </button>
+          </div>
         </div>
 
         <div className="md:w-1/2 bg-[#1A485B] p-6 md:p-8">
