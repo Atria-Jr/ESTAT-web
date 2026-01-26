@@ -107,50 +107,68 @@ function AnaliseDeDados() {
 		</div>
 	</div>
 </section>
-			{/* Benefícios */}
-			<section className='py-12'>
-				<div className='max-w-6xl mx-auto px-4 text-center'>
-					<h2 className='text-[#235F77] font-bold text-2xl lg:text-3xl mb-8'>Benefícios Para o Seu Projeto</h2>
-					<p className='text-[#676A6F] mb-10'>Com a nossa análise de dados, você:</p>
+		{/* Beneficios para seu projeto */}
+<section className="py-14">
+  {/* faixa SOMENTE do título + subtexto (full-width) */}
+  <div className="w-full bg-[#1A485B] py-12 mb-10">
+    <div className="max-w-5xl mx-auto px-4">
+      <h3 className="text-center text-white font-semibold">
+        <span className="block text-2xl lg:text-3xl">
+          Benefícios Para o Seu Projeto
+        </span>
 
-					<div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-						<div className='bg-white shadow-lg p-6 flex flex-col md:flex-row items-center gap-4 h-48'>
-							<img src={img4} className='w-20 h-20 object-contain flex-shrink-0' alt='Atendimento' />
-							<div className='text-left'>
-								<h4 className='font-semibold text-[#235F77] mb-2'>Recebe um atendimento humano e personalizado</h4>
-								<p className='text-[#676A6F] text-sm'>Atendimento humano no canal de comunicação que preferir.</p>
-							</div>
-						</div>
+        <span className="block mt-2 text-base lg:text-lg font-normal opacity-90">
+          Com a nossa análise de dados, você:
+        </span>
+      </h3>
+    </div>
+  </div>
 
-						<div className='bg-white shadow-lg p-6 flex flex-col md:flex-row items-center gap-4 h-48'>
-							<img src={img7} className='w-20 h-20 object-contain flex-shrink-0 md:order-2' alt='Padrões' />
-							<div className='text-left md:order-1'>
-								<h4 className='font-semibold text-[#235F77] mb-2'>Ganha a capacidade de identificar padrões</h4>
-								<p className='text-[#676A6F] text-sm'>Compare resultados e detecte anomalias que passam despercebidas em análises manuais.</p>
-							</div>
-						</div>
+  {/* cards (sem bg atrás) */}
+  <div className="max-w-5xl mx-auto px-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <article className="bg-white border-4 border-[#2F83AC] p-8 flex flex-col items-center justify-center text-center aspect-square">
+        <img src={img4} className="w-28 mb-5" alt="Atendimento" />
+        <div>
+          <h4 className="font-semibold text-[#235F77] text-base mb-2">
+            Recebe um atendimento humano e personalizado no canal de comunicação que preferir;
+          </h4>
+        </div>
+      </article>
 
-						<div className='bg-white shadow-lg p-6 flex flex-col md:flex-row items-center gap-4 h-48'>
-							<img src={img1} className='w-20 h-20 object-contain flex-shrink-0' alt='Processo Rápido' />
-							<div className='text-left'>
-								<h4 className='font-semibold text-[#235F77] mb-2'>Processo rápido e fundamentado</h4>
-								<p className='text-[#676A6F] text-sm'>Entregamos conclusões e estratégias com evidências sólidas, mesmo sem conhecimento técnico avançado por parte do cliente.</p>
-							</div>
-						</div>
+      <article className="bg-white border-4 border-[#2F83AC] p-8 flex flex-col items-center justify-center text-center aspect-square">
+        <img src={img7} className="w-28 mb-5" alt="Padrões" />
+        <div>
+          <h4 className="font-semibold text-[#235F77] text-base mb-2">
+            Ganha a capacidade de identificar padrões, comparar resultados e detectar anomalias;
+          </h4>
+        </div>
+      </article>
 
-						<div className='bg-white shadow-lg p-6 flex flex-col items-center gap-4 h-48'>
-							<div className='text-left flex-1'>
-								<h4 className='font-semibold text-[#235F77] mb-2'>Qualidade Unicamp com preços competitivos</h4>
-								<p className='text-[#676A6F] text-sm'>Trabalhamos com padrões acadêmicos e entrega profissional ao seu projeto.</p>
-							</div>
-							<div className='flex gap-4 items-center justify-center'>
-								<img src={img5} className='w-16 h-16 object-contain' alt='Unicamp' />
-								<img src={img2} className='w-16 h-16 object-contain' alt='Preço' />
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+      <article className="bg-white border-4 border-[#2F83AC] p-8 flex flex-col items-center justify-center text-center aspect-square">
+        <img src={img1} className="w-28 mb-5" alt="Processo" />
+        <div>
+          <h4 className="font-semibold text-[#235F77] text-base mb-2">
+            Realiza esse processo de forma rápida, fundamentando suas provisões, conclusões e estratégias em evidências sólidas, mesmo sem
+            conhecimento técnico avançado.
+          </h4>
+        </div>
+      </article>
+
+      <article className="bg-white border-4 border-[#2F83AC] p-8 flex flex-col items-center justify-center text-center aspect-square">
+        <div className="flex items-center gap-3 mb-5">
+          <img src={img5} className="w-20" alt="Preço" />
+          <img src={img2} className="w-20" alt="Unicamp" />
+        </div>
+        <div>
+          <h4 className="font-semibold text-[#235F77] text-base mb-2">
+            Tudo isso com o padrão de qualidade Unicamp e com preços abaixo do mercado!
+          </h4>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
 			{/* CTA */}
 			<section className='py-3 bg-[#235F77] text-white'>
