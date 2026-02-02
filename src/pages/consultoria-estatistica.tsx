@@ -4,11 +4,11 @@ import OQueEMobile from "./../assets/consultoria-Estatistica/O-Que-E-Mobile.png"
 import HeroMobile from "./../assets/consultoria-Estatistica/Hero-Mobile.png"
 import BeneficiosImage from "./../assets/consultoria-Estatistica/Beneficios-Image.jpg"
 import BeneficiosMobile from "./../assets/consultoria-Estatistica/Beneficios-Mobile.png"
-import ContatoMobile01 from "./../assets/validacao-Estatistica/Contato-Mobile-01.png"
-import ContatoMobile02 from "./../assets/validacao-Estatistica/Contato-Mobile-02.png"
-import ContatoMobile03 from "./../assets/validacao-Estatistica/Contato-Mobile-03.png"
-import ContatoMobile04 from "./../assets/validacao-Estatistica/Contato-Mobile-04.png"
-import ContatoMobile05 from "./../assets/validacao-Estatistica/Contato-Mobile-05.png"
+import ContatoMobile01 from "./../assets/validacao-estatistica/Contato-Mobile-01.png"
+import ContatoMobile02 from "./../assets/validacao-estatistica/Contato-Mobile-02.png"
+import ContatoMobile03 from "./../assets/validacao-estatistica/Contato-Mobile-03.png"
+import ContatoMobile04 from "./../assets/validacao-estatistica/Contato-Mobile-04.png"
+import ContatoMobile05 from "./../assets/validacao-estatistica/Contato-Mobile-05.png"
 import seta from '../assets/servicos/seta.svg';
 
 function ConsultoriaEstatistica() {
