@@ -1,11 +1,11 @@
-import bgTop from '../assets/Serviços/bg-top.png';
-import analise from '../assets/Serviços/analise.svg';
-import business from '../assets/Serviços/business-inteligence.svg';
-import consultoria from '../assets/Serviços/consultoria.svg';
-import validacao from '../assets/Serviços/validacao.svg';
-import machine from '../assets/Serviços/machine-learning.svg';
-import planejamento from '../assets/Serviços/planejamento.svg';
-import seta from '../assets/Serviços/seta.svg';
+import bgTop from '../assets/servicos/bg-top.png';
+import analise from '../assets/servicos/analise.svg';
+import business from '../assets/servicos/business-inteligence.svg';
+import consultoria from '../assets/servicos/consultoria.svg';
+import validacao from '../assets/servicos/validacao.svg';
+import machine from '../assets/servicos/machine-learning.svg';
+import planejamento from '../assets/servicos/planejamento.svg';
+import seta from '../assets/servicos/seta.svg';
 
 function Servicos() {
     return <main>

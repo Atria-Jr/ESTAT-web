@@ -1,14 +1,14 @@
-import HeroImage from "./../assets/Validacao-Estatistica/Hero-Image.jpg"
-import OQueEImage from "./../assets/Validacao-Estatistica/O-Que-E-Image.jpg"
-import BeneficiosImage from "./../assets/Validacao-Estatistica/Beneficios-Image.jpg"
-import OQueEMobile from "./../assets/Validacao-Estatistica/O-Que-E-Mobile.png"
-import BeneficiosMobile from "./../assets/Validacao-Estatistica/Beneficios-Mobile.png"
-import ContatoMobile01 from "./../assets/Validacao-Estatistica/Contato-Mobile-01.png"
-import ContatoMobile02 from "./../assets/Validacao-Estatistica/Contato-Mobile-02.png"
-import ContatoMobile03 from "./../assets/Validacao-Estatistica/Contato-Mobile-03.png"
-import ContatoMobile04 from "./../assets/Validacao-Estatistica/Contato-Mobile-04.png"
-import ContatoMobile05 from "./../assets/Validacao-Estatistica/Contato-Mobile-05.png"
-import seta from '../assets/Serviços/seta.svg';
+import HeroImage from "./../assets/validacao-Estatistica/Hero-Image.jpg"
+import OQueEImage from "./../assets/validacao-Estatistica/O-Que-E-Image.jpg"
+import BeneficiosImage from "./../assets/validacao-Estatistica/Beneficios-Image.jpg"
+import OQueEMobile from "./../assets/validacao-Estatistica/O-Que-E-Mobile.png"
+import BeneficiosMobile from "./../assets/validacao-Estatistica/Beneficios-Mobile.png"
+import ContatoMobile01 from "./../assets/validacao-Estatistica/Contato-Mobile-01.png"
+import ContatoMobile02 from "./../assets/validacao-Estatistica/Contato-Mobile-02.png"
+import ContatoMobile03 from "./../assets/validacao-Estatistica/Contato-Mobile-03.png"
+import ContatoMobile04 from "./../assets/validacao-Estatistica/Contato-Mobile-04.png"
+import ContatoMobile05 from "./../assets/validacao-Estatistica/Contato-Mobile-05.png"
+import seta from '../assets/servicos/seta.svg';
 
 function ValidacaoEstatistica() {
     return (

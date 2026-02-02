@@ -1,6 +1,6 @@
-import bgTop from "../assets/Planejamento/bg-top.png";
-import peopleDesktop from "../assets/Planejamento/people-oval-style.png";
-import peopleMobile from "../assets/Planejamento/people-wave-style.svg";
+import bgTop from "../assets/planejamento/bg-top.png";
+import peopleDesktop from "../assets/planejamento/people-oval-style.png";
+import peopleMobile from "../assets/planejamento/people-wave-style.svg";
 
 function Planejamento() {
 
