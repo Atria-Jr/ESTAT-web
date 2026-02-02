@@ -7,35 +7,6 @@ import img5 from '../assets/analisededados/896aeb08c7810599e7e868e261ee164e7160c
 import img6 from '../assets/analisededados/cd8bbc0f80cdad4ac4a2a7d8ea90b883e184fb8f.png'
 import img7 from '../assets/analisededados/ec5e44f6a3b3824fce794ade48bf4dfb5c3f3204.png'
 
-// ✅ Seta SEM FUNDO (SVG transparente)
-function SetaIcon({ className = '' }) {
-	return (
-		<svg
-			className={className}
-			viewBox='0 0 64 64'
-			xmlns='http://www.w3.org/2000/svg'
-			fill='none'
-			aria-hidden='true'
-		>
-			{/* haste */}
-			<path
-				d='M6 32h44'
-				stroke='currentColor'
-				strokeWidth='6'
-				strokeLinecap='round'
-				strokeLinejoin='round'
-			/>
-			{/* ponta */}
-			<path
-				d='M36 16l14 16-14 16'
-				stroke='currentColor'
-				strokeWidth='6'
-				strokeLinecap='round'
-				strokeLinejoin='round'
-			/>
-		</svg>
-	)
-}
 
 function AnaliseDeDados() {
 	return (
