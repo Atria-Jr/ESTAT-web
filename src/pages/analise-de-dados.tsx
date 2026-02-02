@@ -2,7 +2,6 @@ import bgTop from '../assets/analisededados/d8b7a2fd620ff7be248b14ddbcb9aa05e936
 
 import img1 from '../assets/analisededados/442bec9c38a6a711d39854648c23adcb34aa1964.png'
 import img2 from '../assets/analisededados/528b7877b11173c33c2882c59e581dd76c4f89e9.png'
-import img3 from '../assets/analisededados/63a1191b2bc632541b322b8fd57ccac18042ff56.png'
 import img4 from '../assets/analisededados/711e327a0ef7b868c319c4951fb73365cbc7a8f7 (1).png'
 import img5 from '../assets/analisededados/896aeb08c7810599e7e868e261ee164e7160c47d.png'
 import img6 from '../assets/analisededados/cd8bbc0f80cdad4ac4a2a7d8ea90b883e184fb8f.png'
