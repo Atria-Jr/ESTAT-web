@@ -1,8 +1,8 @@
-import bgTop from '../assets/BusinessIntelligence/hero-fundo.png'
+import bgTop from '../assets/business-intelligence/hero-fundo.png'
 
 import img1 from '../assets/analisededados/442bec9c38a6a711d39854648c23adcb34aa1964.png'
 import img2 from '../assets/analisededados/528b7877b11173c33c2882c59e581dd76c4f89e9.png'
-import img3 from '../assets/BusinessIntelligence/analise.png'
+import img3 from '../assets/business-intelligence/analise.png'
 import img4 from '../assets/analisededados/711e327a0ef7b868c319c4951fb73365cbc7a8f7 (1).png'
 import img5 from '../assets/analisededados/896aeb08c7810599e7e868e261ee164e7160c47d.png'
 import img7 from '../assets/analisededados/ec5e44f6a3b3824fce794ade48bf4dfb5c3f3204.png'

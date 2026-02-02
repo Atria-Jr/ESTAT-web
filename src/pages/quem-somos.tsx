@@ -1,8 +1,8 @@
-import fotoTime from '../assets/Quem Somos/foto-time.svg';
-import fotoUnicamp from '../assets/Quem Somos/bg-unicamp.png';
-import bgMissao from '../assets/Quem Somos/bg-missao.svg';
-import bgVisao from '../assets/Quem Somos/bg-visao.svg';
-import Slider from '../components/Slider/slider';
+import fotoTime from '../assets/quem-somos/foto-time.svg';
+import fotoUnicamp from '../assets/quem-somos/bg-unicamp.png';
+import bgMissao from '../assets/quem-somos/bg-missao.svg';
+import bgVisao from '../assets/quem-somos/bg-visao.svg';
+import Slider from '../components/slider/slider';
 import { SwiperSlide } from 'swiper/react';
 import { useState } from 'react';
 
@@ -19,7 +19,7 @@ function QuemSomos() {
         onSlideChange: (swiper:any) => setSlideAtivo(swiper.realIndex)
     };
     const imagensCarrossel = Object.values(
-        import.meta.glob('../assets/Quem Somos/carrossel/*.svg', { eager: true, import: 'default' })
+        import.meta.glob('../assets/quem-somos/carrossel/*.svg', { eager: true, import: 'default' })
     ) as string[];
     const anos = [2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018];
     const nomes: Record<number, string[]> = {
